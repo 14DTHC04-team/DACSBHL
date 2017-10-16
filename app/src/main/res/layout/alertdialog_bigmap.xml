@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:background="#FAFAFA"
+    android:layout_height="wrap_content">
+    <Button
+        android:background="#ff22a96e"
+        android:textColor="#FFF"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:id="@+id/aa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="For Direction" />
+    <TextView
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <Button
+        android:background="#ff22a96e"
+        android:textColor="#FFFF"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:id="@+id/ss"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="For more Information"
+        android:layout_marginBottom="2dp"/>
+</LinearLayout>

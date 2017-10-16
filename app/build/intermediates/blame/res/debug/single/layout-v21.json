@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\Android Project\\DACS\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\BRUCE\\.android\\build-cache\\9084f5b0bc7084d5ae647c294b4b08f4788af2e3\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "E:\\Android Project\\DACS\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\BRUCE\\.android\\build-cache\\9084f5b0bc7084d5ae647c294b4b08f4788af2e3\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\Android Project\\DACS\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\BRUCE\\.android\\build-cache\\9084f5b0bc7084d5ae647c294b4b08f4788af2e3\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "E:\\Android Project\\DACS\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\BRUCE\\.android\\build-cache\\9084f5b0bc7084d5ae647c294b4b08f4788af2e3\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\Android Project\\DACS\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "C:\\Users\\BRUCE\\.android\\build-cache\\67884a8c756b0df3eee80f93ced7f9a40ea60814\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    }
+]

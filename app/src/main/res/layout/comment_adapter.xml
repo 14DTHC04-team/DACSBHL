@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/userImage"
+            android:background="#212121"
+            android:src="@drawable/ic_account_white_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textColor="#00B0FF"
+            android:layout_weight="1"
+            android:text="UserName"
+            android:textSize="15dp"
+            tools:fontFamily="casual" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|right">
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:rating="3"
+                android:progressTint="#FFD600"
+                android:clickable="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment's user"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/imageComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dateofComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textStyle="italic"
+            android:layout_marginLeft="2dp"
+            android:text="Since: 11:45 pm  1/1/1996"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/like"
+                android:layout_marginRight="5dp"
+                android:text="Like"
+                android:textStyle="bold"
+                android:textColor="#00B0FF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

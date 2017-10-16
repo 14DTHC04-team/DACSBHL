@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bruce.dacs.Users.Register"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Register"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_account_white_24dp"
+        android:hint="Name"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edtEmail"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_mail_ru_white_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:hint="Email"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:hint="Password"
+        android:textSize="20dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right"
+        android:text="OK"
+        android:layout_width="150dp"
+        android:layout_height="50dp" />
+
+</LinearLayout>

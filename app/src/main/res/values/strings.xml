@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hi! Where Am I?</string>
+    <string name="facebook_app_id">1245433598911871</string>
+    <string name="fb_login_protocol_scheme">1245433598911871</string>
+    <string name="title_activity_big_map">Map</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

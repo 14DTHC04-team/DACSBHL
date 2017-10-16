@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bruce.dacs.Users.User_Profile"
+    tools:showIn="@layout/activity_user__profile">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtUserProfile_Mail"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:background="#E0E0E0"
+        android:drawableLeft="@drawable/ic_mail_ru_white_24dp"
+        android:gravity="center|left"
+        android:drawablePadding="7dp"
+        android:paddingLeft="10dp"
+        android:hint="Email"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:id="@+id/txtUserProfile_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#E0E0E0"
+        android:drawableLeft="@drawable/ic_account_white_24dp"
+        android:drawablePadding="7dp"
+        android:gravity="center|left"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:enabled="false"/>
+
+
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:id="@+id/txtUserProfile_Phone"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:background="#E0E0E0"
+        android:drawableLeft="@drawable/ic_phone_white_24dp"
+        android:gravity="center|left"
+        android:drawablePadding="7dp"
+        android:hint="Number phone"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:enabled="false"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_weight="9"
+            android:id="@+id/txtUserProfile_Birthday"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:background="#E0E0E0"
+            android:drawableLeft="@drawable/ic_lock_white_24dp"
+            android:gravity="center|left"
+            android:drawablePadding="7dp"
+            android:hint="Birthday : dd/MM/yyyy"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:enabled="false"/>
+        <LinearLayout
+            android:id="@+id/linearCalendar"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageButton
+
+                android:id="@+id/btnCalendar"
+                android:background="@drawable/ic_perm_contact_calendar_white_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/txtUserProfile_Pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="9"
+            android:background="#E0E0E0"
+            android:drawableLeft="@drawable/ic_lock_white_24dp"
+            android:drawablePadding="7dp"
+            android:gravity="center|left"
+            android:text="123456"
+            android:textSize="20dp"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:background="#212121"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+
+                android:id="@+id/btnchangepass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_refresh_white_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpdate_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="5"
+            android:text="Update Information" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:layout_weight="5"
+            android:enabled="false"
+            android:text="Save" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
