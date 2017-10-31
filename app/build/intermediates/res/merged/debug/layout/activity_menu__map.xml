@@ -45,18 +45,15 @@
                     android:text="OK" />
 
             </LinearLayout>
-            <FrameLayout
 
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recycleView_BigMap"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <ProgressBar
-                    android:id="@+id/download_BigMap"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"/>
-               
+                android:background="#FAFAFA">
 
-            </FrameLayout>
+            </android.support.v7.widget.RecyclerView>
 
         </LinearLayout>
 

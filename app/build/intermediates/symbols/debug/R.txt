@@ -1484,7 +1484,6 @@ int id display_always 0x7f0f009a
 int id donate_with 0x7f0f0086
 int id donate_with_google 0x7f0f0087
 int id download 0x7f0f0150
-int id download_BigMap 0x7f0f00e8
 int id drawer_layout 0x7f0f00db
 int id drawer_map 0x7f0f00d0
 int id editText 0x7f0f00e5
@@ -1639,6 +1638,7 @@ int id progress_horizontal 0x7f0f0015
 int id radio 0x7f0f00ba
 int id ratingBar 0x7f0f012f
 int id ratingBar_Main 0x7f0f00d7
+int id recycleView_BigMap 0x7f0f00e8
 int id recyclerView_Comment 0x7f0f0134
 int id rfc822 0x7f0f006c
 int id right 0x7f0f0043

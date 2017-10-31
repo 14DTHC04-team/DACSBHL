@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\0ba29afa6dffc8e9190935ad344a0ca743140460\\output\\res\\drawable\\messenger_button_white_bg_round.xml"
     },
     {
-        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\c8c7df0266d84225dd100dfa8ffc0a6e9cb276cc\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
-    },
-    {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_photo_camera_white_24dp.png",
         "source": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\drawable\\ic_photo_camera_white_24dp.png"
+    },
+    {
+        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c8c7df0266d84225dd100dfa8ffc0a6e9cb276cc\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
@@ -60,16 +60,16 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\473e422ace0fff46babb60e538b492d264416087\\output\\res\\drawable\\mr_media_play_light.xml"
     },
     {
-        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\c8c7df0266d84225dd100dfa8ffc0a6e9cb276cc\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_closed_caption.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\drawable\\cast_ic_expanded_controller_closed_caption.xml"
     },
     {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divider.xml",
         "source": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\drawable\\divider.xml"
     },
     {
-        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_closed_caption.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\drawable\\cast_ic_expanded_controller_closed_caption.xml"
+        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c8c7df0266d84225dd100dfa8ffc0a6e9cb276cc\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",

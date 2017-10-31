@@ -4882,7 +4882,6 @@ containing a value of this type.
         public static final int donate_with=0x7f0f0086;
         public static final int donate_with_google=0x7f0f0087;
         public static final int download=0x7f0f0150;
-        public static final int download_BigMap=0x7f0f00e8;
         public static final int drawer_layout=0x7f0f00db;
         public static final int drawer_map=0x7f0f00d0;
         public static final int editText=0x7f0f00e5;
@@ -5037,6 +5036,7 @@ containing a value of this type.
         public static final int radio=0x7f0f00ba;
         public static final int ratingBar=0x7f0f012f;
         public static final int ratingBar_Main=0x7f0f00d7;
+        public static final int recycleView_BigMap=0x7f0f00e8;
         public static final int recyclerView_Comment=0x7f0f0134;
         public static final int rfc822=0x7f0f006c;
         public static final int right=0x7f0f0043;
