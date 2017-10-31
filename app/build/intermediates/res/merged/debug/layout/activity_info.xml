@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#880E4F"
-            app:layout_scrollFlags="scroll|enterAlways">
+            >
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"

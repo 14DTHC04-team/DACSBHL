@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "E:\\Android Project\\DACS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
+        "outputFile": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 180
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -30,7 +30,7 @@
                     "endOffset": 279
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -49,7 +49,7 @@
                     "endOffset": 376
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -68,7 +68,7 @@
                     "endOffset": 500
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -87,7 +87,7 @@
                     "endOffset": 582
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -106,7 +106,7 @@
                     "endOffset": 755
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -125,7 +125,7 @@
                     "endOffset": 869
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -144,7 +144,7 @@
                     "endOffset": 985
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,
@@ -163,7 +163,7 @@
                     "endOffset": 1105
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
@@ -182,7 +182,7 @@
                     "endOffset": 1210
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
@@ -201,7 +201,7 @@
                     "endOffset": 1317
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 0,
@@ -220,7 +220,7 @@
                     "endOffset": 1406
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 0,
@@ -239,7 +239,7 @@
                     "endOffset": 1512
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 0,
@@ -258,7 +258,7 @@
                     "endOffset": 1620
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 0,
@@ -277,7 +277,7 @@
                     "endOffset": 1728
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 0,
@@ -296,7 +296,7 @@
                     "endOffset": 1809
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 0,
@@ -315,7 +315,7 @@
                     "endOffset": 1944
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\df7b8628a93ebeb21c9e1230e2d03ffc6668c800\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\a7de9fba177f1bb28d70c65804a77860f3704768\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -334,7 +334,7 @@
                     "endOffset": 2084
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\df7b8628a93ebeb21c9e1230e2d03ffc6668c800\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\a7de9fba177f1bb28d70c65804a77860f3704768\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -353,7 +353,7 @@
                     "endOffset": 2179
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\df7b8628a93ebeb21c9e1230e2d03ffc6668c800\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\a7de9fba177f1bb28d70c65804a77860f3704768\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -372,7 +372,7 @@
                     "endOffset": 2254
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 0,
@@ -391,7 +391,7 @@
                     "endOffset": 2328
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 0,
@@ -410,7 +410,7 @@
                     "endOffset": 2415
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 0,
@@ -429,7 +429,7 @@
                     "endOffset": 2519
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 0,
@@ -448,7 +448,7 @@
                     "endOffset": 2625
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 0,
@@ -467,7 +467,7 @@
                     "endOffset": 2726
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 0,
@@ -486,7 +486,7 @@
                     "endOffset": 2825
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 0,
@@ -505,7 +505,7 @@
                     "endOffset": 2927
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 0,
@@ -524,7 +524,7 @@
                     "endOffset": 3001
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 0,
@@ -543,7 +543,7 @@
                     "endOffset": 3107
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 0,
@@ -562,7 +562,7 @@
                     "endOffset": 3204
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 0,
@@ -581,7 +581,7 @@
                     "endOffset": 3303
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 0,
@@ -600,7 +600,7 @@
                     "endOffset": 3422
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 0,
@@ -619,7 +619,7 @@
                     "endOffset": 3566
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 33,
                         "startColumn": 0,
@@ -638,7 +638,7 @@
                     "endOffset": 3662
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 0,
@@ -657,7 +657,7 @@
                     "endOffset": 3757
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 35,
                         "startColumn": 0,
@@ -676,7 +676,7 @@
                     "endOffset": 3860
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 0,
@@ -695,7 +695,7 @@
                     "endOffset": 3942
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\4ac1075902e7c1a1aec428e5088d336c9e9436bd\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 0,
@@ -714,7 +714,7 @@
                     "endOffset": 4051
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -733,7 +733,7 @@
                     "endOffset": 4244
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -752,7 +752,7 @@
                     "endOffset": 4379
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -771,7 +771,7 @@
                     "endOffset": 4491
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -790,7 +790,7 @@
                     "endOffset": 4695
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -809,7 +809,7 @@
                     "endOffset": 4830
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -828,7 +828,7 @@
                     "endOffset": 4969
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -847,7 +847,7 @@
                     "endOffset": 5165
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\1ee0ed10d7bc48262f0eb08a0be54e4858c06066\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\dd2ff452f1902129fca8522fa84a044663cdb568\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -866,7 +866,7 @@
                     "endOffset": 5381
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,
@@ -885,7 +885,7 @@
                     "endOffset": 5490
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
@@ -904,7 +904,7 @@
                     "endOffset": 5687
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
@@ -923,7 +923,7 @@
                     "endOffset": 5822
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 0,
@@ -942,7 +942,7 @@
                     "endOffset": 6034
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 0,
@@ -961,7 +961,7 @@
                     "endOffset": 6223
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 0,
@@ -980,7 +980,7 @@
                     "endOffset": 6322
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 0,
@@ -999,7 +999,7 @@
                     "endOffset": 6416
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 0,
@@ -1018,7 +1018,7 @@
                     "endOffset": 6524
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c24560d0959a085722816b014901862810c57d56\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\7515e36692df122b11e1d2bbacd432553da1ccd8\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 0,
@@ -1037,7 +1037,7 @@
                     "endOffset": 6639
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\67884a8c756b0df3eee80f93ced7f9a40ea60814\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\111d443cdb6901a2e3c09c3ec83c257e4870392a\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -1056,7 +1056,7 @@
                     "endOffset": 6737
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\67884a8c756b0df3eee80f93ced7f9a40ea60814\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\111d443cdb6901a2e3c09c3ec83c257e4870392a\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -1075,7 +1075,7 @@
                     "endOffset": 6816
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c44ced6009db6955bb52969ae8b44397943be5b9\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\5562f58df7d6e77f363570aea17eefd7ce2b4ab1\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -1094,7 +1094,7 @@
                     "endOffset": 6951
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c44ced6009db6955bb52969ae8b44397943be5b9\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\5562f58df7d6e77f363570aea17eefd7ce2b4ab1\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -1113,7 +1113,7 @@
                     "endOffset": 7020
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c44ced6009db6955bb52969ae8b44397943be5b9\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\5562f58df7d6e77f363570aea17eefd7ce2b4ab1\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -1132,7 +1132,7 @@
                     "endOffset": 7087
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c44ced6009db6955bb52969ae8b44397943be5b9\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\5562f58df7d6e77f363570aea17eefd7ce2b4ab1\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -1151,7 +1151,7 @@
                     "endOffset": 7176
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c44ced6009db6955bb52969ae8b44397943be5b9\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\5562f58df7d6e77f363570aea17eefd7ce2b4ab1\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -1170,7 +1170,7 @@
                     "endOffset": 7297
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\c44ced6009db6955bb52969ae8b44397943be5b9\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\5562f58df7d6e77f363570aea17eefd7ce2b4ab1\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -1189,7 +1189,7 @@
                     "endOffset": 7403
                 },
                 "from": {
-                    "file": "C:\\Users\\BRUCE\\.android\\build-cache\\3d72fdcec05da06719f77d4c99ff07309f9a58e6\\output\\res\\values-mk\\values.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\ecba834b606b3f8ff26d5febbbde722e2af12c44\\output\\res\\values-mk\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,

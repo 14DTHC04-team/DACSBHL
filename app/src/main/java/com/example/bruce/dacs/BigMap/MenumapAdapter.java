@@ -6,9 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.bruce.dacs.R;
+import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -36,12 +38,22 @@ public class MenumapAdapter extends RecyclerView.Adapter<MenumapAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
 
         final Tourist_Location tourist_location = tourist_locations.get(position);
         holder.txtAddress.setText(tourist_location.Address);
         holder.locationName.setText(tourist_location.LocationName);
-        Picasso.with(context).load(tourist_location.LocationImg).into(holder.imageView);
+        Picasso.with(context).load(tourist_location.LocationImg).into(holder.imageView, new Callback() {
+            @Override
+            public void onSuccess() {
+                holder.progressBar.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onError() {
+
+            }
+        });
     }
 
     @Override
@@ -52,7 +64,7 @@ public class MenumapAdapter extends RecyclerView.Adapter<MenumapAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView imageView;
         TextView txtAddress,locationName;
-
+        ProgressBar progressBar;
         public ViewHolder(View itemView) {
             super(itemView);
 
@@ -60,6 +72,7 @@ public class MenumapAdapter extends RecyclerView.Adapter<MenumapAdapter.ViewHold
             locationName = (TextView) itemView.findViewById(R.id.txtLocationName);
             imageView = (ImageView) itemView.findViewById(R.id.imageViewAdapter);
             txtAddress = (TextView) itemView.findViewById(R.id.txtAddress);
+            progressBar= (ProgressBar) itemView.findViewById(R.id.progress_bar_download);
         }
         @Override
         public void onClick(View v) {

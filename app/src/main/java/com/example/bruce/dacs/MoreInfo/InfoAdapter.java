@@ -9,9 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.bruce.dacs.R;
+import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -39,10 +41,20 @@ public class InfoAdapter extends ArrayAdapter<MoreInfo> {
 
         ImageView imageView = (ImageView) row.findViewById(R.id.infoImg);
         TextView txtInfo= (TextView) row.findViewById(R.id.infotxt);
-
+        final ProgressBar progressBar= (ProgressBar) row.findViewById(R.id.download);
         MoreInfo menu=this.objects.get(position);
 
-        Picasso.with(getContext()).load(menu.Image).into(imageView);
+        Picasso.with(getContext()).load(menu.Image).into(imageView, new Callback() {
+            @Override
+            public void onSuccess() {
+                progressBar.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onError() {
+
+            }
+        });
         txtInfo.setText(menu.Info);
         return row;
     }
