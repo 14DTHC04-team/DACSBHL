@@ -24,29 +24,30 @@ import java.util.ArrayList;
  */
 
 public class Comment_Fragment extends android.support.v4.app.Fragment {
-    View mView;
+    ViewGroup mView;
 
-    RecyclerView recyclerView_Comment, recyclerView_CommentImage;
+    RecyclerView recyclerView_Comment;
+
+
     Comment_Adapter adaper;
     ArrayList<Comment_Contructor> comment_contructors;
 
     DatabaseReference mData;
     int location_ID;
 
-    ArrayList<String> urlImages;
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.comment_fragment,container,false);
+        mView = (ViewGroup) inflater.inflate(R.layout.comment_fragment,container,false);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView_Comment = (RecyclerView) mView.findViewById(R.id.recyclerView_Comment);
         recyclerView_Comment.addItemDecoration(new DividerItemDecoration(getContext(), layoutManager.getOrientation()));
-
-        adaper = new Comment_Adapter(comment_contructors,getActivity());
+        adaper = new Comment_Adapter(comment_contructors,getActivity(),location_ID);
         recyclerView_Comment.setLayoutManager(layoutManager);
         recyclerView_Comment.setAdapter(adaper);
-        recyclerView_Comment.setLayoutManager(new LinearLayoutManager(getActivity()));
 
 
         return mView;
@@ -56,30 +57,31 @@ public class Comment_Fragment extends android.support.v4.app.Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        location_ID = getActivity().getIntent().getIntExtra("location_id",0);
         Firebase_Comment();
     }
 
     private void Firebase_Comment() {
-        location_ID = getActivity().getIntent().getIntExtra("location_id",0);
         comment_contructors = new ArrayList<>();
-        urlImages = new ArrayList<>();
+
         mData = FirebaseDatabase.getInstance().getReference();
         mData.child("Comments").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Comment_Contructor comment_contructor = dataSnapshot.getValue(Comment_Contructor.class);
+                comment_contructor.commentImages = new ArrayList<>();
                 if(location_ID == Integer.parseInt(comment_contructor.locationID)) {
-                    comment_contructors.add(new Comment_Contructor(comment_contructor.userID, comment_contructor.locationID, comment_contructor.userName, comment_contructor.comment, comment_contructor.date, comment_contructor.like));
-                    for(DataSnapshot commentImage: dataSnapshot.getChildren()){
 
+                    for(DataSnapshot commentImage: dataSnapshot.getChildren()){
                         for(DataSnapshot child_of_CommentImage : commentImage.getChildren()){
-                            urlImages.add(child_of_CommentImage.getValue().toString());
-                            Toast.makeText(getContext(), child_of_CommentImage.getValue().toString()+ " ", Toast.LENGTH_SHORT).show();
+                            comment_contructor.commentImages.add(child_of_CommentImage.getValue().toString());
+                            Toast.makeText(getContext(), comment_contructor.commentImages.size()+ "", Toast.LENGTH_SHORT).show();
                         }
                     }
+                    comment_contructors.add(comment_contructor);
                     adaper.notifyDataSetChanged();
                 }
+
             }
 
             @Override
