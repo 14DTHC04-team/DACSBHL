@@ -10,6 +10,7 @@ public class Comment_Contructor {
     public    String userID;
     public String locationID;
     public String userName;
+    public String userImage;
     public String comment;
     public   String date;
     public   String like;
@@ -19,10 +20,11 @@ public class Comment_Contructor {
 
     }
 
-    public Comment_Contructor(String userID, String locationID, String userName, String comment, String date, String like, ArrayList<String> commentImages) {
+    public Comment_Contructor(String userID, String locationID, String userName, String userImage, String comment, String date, String like, ArrayList<String> commentImages) {
         this.userID = userID;
         this.locationID = locationID;
         this.userName = userName;
+        this.userImage = userImage;
         this.comment = comment;
         this.date = date;
         this.like = like;

@@ -5,12 +5,15 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.bruce.dacs.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -35,7 +38,7 @@ public class Comment_Fragment extends android.support.v4.app.Fragment {
     DatabaseReference mData;
     int location_ID;
 
-
+    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
     @Nullable
     @Override
@@ -58,6 +61,7 @@ public class Comment_Fragment extends android.support.v4.app.Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         location_ID = getActivity().getIntent().getIntExtra("location_id",0);
+
         Firebase_Comment();
     }
 
@@ -73,6 +77,7 @@ public class Comment_Fragment extends android.support.v4.app.Fragment {
                 if(location_ID == Integer.parseInt(comment_contructor.locationID)) {
 
                     for(DataSnapshot commentImage: dataSnapshot.getChildren()){
+
                         for(DataSnapshot child_of_CommentImage : commentImage.getChildren()){
                             comment_contructor.commentImages.add(child_of_CommentImage.getValue().toString());
                             Toast.makeText(getContext(), comment_contructor.commentImages.size()+ "", Toast.LENGTH_SHORT).show();

@@ -7,9 +7,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.bruce.dacs.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -45,6 +47,7 @@ public class Comment_Adapter extends RecyclerView.Adapter<Comment_Adapter.ViewHo
         holder.txtComment.setText(cC.comment);
         holder.txtDateOfComment.setText("Since: 11:45 pm 1/1/96");
         holder.txtUsername.setText(cC.userName);
+        Picasso.with(context).load(cC.userImage).into(holder.userImage);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false);
         holder.recyclerView_Comment_Image.addItemDecoration(new DividerItemDecoration(context, layoutManager.getOrientation()));
@@ -66,6 +69,7 @@ public class Comment_Adapter extends RecyclerView.Adapter<Comment_Adapter.ViewHo
         TextView txtUsername,txtComment,txtDateOfComment,txtLike;
         RecyclerView recyclerView_Comment_Image;
         Adapter_Comment_Image adapter_comment_image;
+        ImageView userImage;
         public ViewHolder(View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
@@ -73,6 +77,7 @@ public class Comment_Adapter extends RecyclerView.Adapter<Comment_Adapter.ViewHo
             txtComment = (TextView) itemView.findViewById(R.id.Comment);
             txtDateOfComment = (TextView) itemView.findViewById(R.id.dateofComment);
             txtLike = (TextView) itemView.findViewById(R.id.like);
+            userImage= (ImageView) itemView.findViewById(R.id.userImage);
             recyclerView_Comment_Image = (RecyclerView) itemView.findViewById(R.id.recyclerView_Comment_Image);
         }
 

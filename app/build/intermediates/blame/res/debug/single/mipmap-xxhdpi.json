@@ -4,15 +4,7 @@
         "source": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "E:\\Android Project\\DACSBHL\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
-        "source": "E:\\Android Project\\DACSBHL\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "E:\\Android Project\\DACSBHL\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
-        "source": "E:\\Android Project\\DACSBHL\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     }
 ]
