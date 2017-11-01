@@ -18,6 +18,7 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -30,6 +31,7 @@ import android.widget.Toast;
 
 import com.example.bruce.dacs.CircleTransform;
 import com.example.bruce.dacs.LocationAndInfoActivity;
+import com.example.bruce.dacs.MoreInfo.Comment_Contructor;
 import com.example.bruce.dacs.R;
 import com.facebook.Profile;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -52,12 +54,14 @@ import com.squareup.picasso.Picasso;
 
 import java.io.ByteArrayOutputStream;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 import static com.example.bruce.dacs.R.id.txtUserProfile_Mail;
 
+@RequiresApi(api = Build.VERSION_CODES.N)
 public class User_Profile extends AppCompatActivity {
-
+    ArrayList<Comment_Contructor> comment_contructors;
 
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     Profile profile = Profile.getCurrentProfile();
@@ -160,7 +164,7 @@ public class User_Profile extends AppCompatActivity {
                     String tempt = FirebaseAuth.getInstance().getCurrentUser().getEmail();
                     int index = tempt.indexOf(".");
                     String key = tempt.substring(0, index);
-                    mData.child("User").child(key).setValue(constructerUserProfile);
+                    mData.child("User").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(constructerUserProfile);
                     Toast.makeText(User_Profile.this, "Save Successful !", Toast.LENGTH_SHORT).show();
                 }
                 if(profile!=null)
@@ -282,6 +286,8 @@ public class User_Profile extends AppCompatActivity {
         btnchange= (ImageButton) findViewById(R.id.btnchangepass);
         btnCalendar= (ImageButton) findViewById(R.id.btnCalendar);
 
+        comment_contructors=new ArrayList<>();
+
     }
     public void UserInfomation(final Profile profile,final FirebaseUser user)
     {
@@ -393,14 +399,20 @@ public class User_Profile extends AppCompatActivity {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
+
                     Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                    Log.d("aasd",downloadUrl.toString());
+                    mData.child("User").child(firebaseAuth.getCurrentUser().getUid()).child("Image").setValue(downloadUrl.toString());
                     UserProfileChangeRequest profileChangeRequest=new UserProfileChangeRequest.Builder()
 
                             .setPhotoUri(Uri.parse(downloadUrl.toString()))
                             .build();
                     user.updateProfile(profileChangeRequest);
+
+
                 }
             });
+
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
@@ -434,4 +446,6 @@ public class User_Profile extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), LocationAndInfoActivity.class));
         super.onBackPressed();
     }
+
+
 }

@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.bruce.dacs.R;
+import com.example.bruce.dacs.Users.Constructer_UserProfile;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
@@ -34,7 +35,8 @@ public class Comment_Fragment extends android.support.v4.app.Fragment {
 
     Comment_Adapter adaper;
     ArrayList<Comment_Contructor> comment_contructors;
-
+    ArrayList<Constructer_UserProfile> list_User;
+    ArrayList<String> userImage;
     DatabaseReference mData;
     int location_ID;
 
@@ -67,26 +69,91 @@ public class Comment_Fragment extends android.support.v4.app.Fragment {
 
     private void Firebase_Comment() {
         comment_contructors = new ArrayList<>();
-
+        list_User=new ArrayList<>();
+        userImage=new ArrayList<>();
         mData = FirebaseDatabase.getInstance().getReference();
         mData.child("Comments").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                Comment_Contructor comment_contructor = dataSnapshot.getValue(Comment_Contructor.class);
+                final Comment_Contructor comment_contructor = dataSnapshot.getValue(Comment_Contructor.class);
                 comment_contructor.commentImages = new ArrayList<>();
                 if(location_ID == Integer.parseInt(comment_contructor.locationID)) {
-
+                    final String key=dataSnapshot.getKey();
                     for(DataSnapshot commentImage: dataSnapshot.getChildren()){
-
                         for(DataSnapshot child_of_CommentImage : commentImage.getChildren()){
                             comment_contructor.commentImages.add(child_of_CommentImage.getValue().toString());
                             Toast.makeText(getContext(), comment_contructor.commentImages.size()+ "", Toast.LENGTH_SHORT).show();
                         }
                     }
-                    comment_contructors.add(comment_contructor);
-                    adaper.notifyDataSetChanged();
+                    mData.child("User").addChildEventListener(new ChildEventListener() {
+                        @Override
+                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                            Constructer_UserProfile constructer_userProfile=dataSnapshot.getValue(Constructer_UserProfile.class);
+                            if(dataSnapshot.getKey().toString().equals(comment_contructor.userID))
+                            {
+                                comment_contructor.userImage=constructer_userProfile.Image;
+                                comment_contructors.add(comment_contructor);
+                                adaper.notifyDataSetChanged();
+                            }
+
+                        }
+
+                        @Override
+                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+                        }
+
+                        @Override
+                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+
                 }
 
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+    private void Get_UserImage(){
+        list_User=new ArrayList<>();
+        userImage=new ArrayList<>();
+        mData = FirebaseDatabase.getInstance().getReference();
+        mData.child("User").addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+
+                 Constructer_UserProfile constructer_userProfile=dataSnapshot.getValue(Constructer_UserProfile.class);
+                 userImage.add(constructer_userProfile.Image);
             }
 
             @Override

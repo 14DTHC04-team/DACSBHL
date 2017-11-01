@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Nov 01 11:27:22 ICT 2017
+#Wed Nov 01 16:25:15 ICT 2017
 20.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 143.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 493.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -91,7 +91,7 @@
 501.set=ANDROID_RESOURCE
 283.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 454.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
-130.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_00_dark.png
+130.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_plusone_medium_off_client.png
 480.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\animator-v21\\design_appbar_state_list_animator.xml
 301.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_546c0ca70a5bcfb0b90f8795b42d2736551afc07\\classes.dex
 651.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_art_track_grey600_48.png
@@ -322,7 +322,7 @@
 91.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png
 368.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 539.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
-215.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\cast_ic_stop_circle_filled_grey600.png
+215.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_cast_connected_white_24.png
 565.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_primary_text_disable_only_material_dark.xml
 405.set=ANDROID_RESOURCE
 32.set=ANDROID_RESOURCE
@@ -465,7 +465,7 @@
 376.set=ANDROID_RESOURCE
 617.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 122.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\common_google_signin_btn_text_light_focused.xml
-643.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_stop_grey600_48.png
+643.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_18_light.png
 479.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 155.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_mini_controller_gradient_light.xml
 299.set=ANDROID_RESOURCE
@@ -498,7 +498,7 @@
 13.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_grey.png
 469.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 8.set=ANDROID_RESOURCE
-316.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\cast_ic_notification_on.png
+316.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_13_light.png
 199.set=ANDROID_RESOURCE
 29.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 178.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_volume_off_grey600_36.png
@@ -597,7 +597,7 @@
 266.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_expand_11.png
 491.set=ANDROID_RESOURCE
 299.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_ic_mini_controller_stop.xml
-129.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_plusone_medium_off_client.png
+129.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_00_dark.png
 13.set=ANDROID_RESOURCE
 130.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 716.set=ANDROID_RESOURCE
@@ -638,7 +638,7 @@
 554.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\com_facebook_button_login_background.xml
 44.set=ANDROID_RESOURCE
 708.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
-2.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_11_dark.png
+2.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_16_dark.png
 96.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 587.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_e0056c27626bb0984fcbe3dbac7555f8c71ccfa1\\classes.dex
 417.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png
@@ -676,7 +676,7 @@
 150.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png
 249.set=ANDROID_RESOURCE
 321.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\messenger_button_white_bg_round.xml
-671.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_forward_30_white_24.png
+671.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_04_dark.png
 34.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 624.set=ANDROID_RESOURCE
 127.set=ANDROID_RESOURCE
@@ -685,7 +685,7 @@
 337.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 508.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 502.set=ANDROID_RESOURCE
-705.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\cast_abc_scrubber_control_off_mtrl_alpha.png
+705.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_plusone_tall_off_client.png
 199.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 93.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color-v23\\abc_tint_spinner.xml
 217.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_02_light.png
@@ -787,7 +787,7 @@
 287.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 458.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 134.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\bolts-applinks-1.4.0_bcd2ca7e22861a0f04826903b645ccd4a7d80cde\\classes.dex
-484.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png
+484.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_pause_circle_filled_white_36.png
 305.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml
 655.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png
 464.set=ANDROID_RESOURCE
@@ -796,7 +796,7 @@
 688.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_93c896a7010b99bd38377e6ba4d7d743a16c5147\\classes.dex
 91.set=ANDROID_RESOURCE
 342.set=ANDROID_RESOURCE
-518.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_09_dark.png
+518.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\com_facebook_button_like_icon_selected.png
 77.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\navigation_empty_icon.xml
 265.set=ANDROID_RESOURCE
 381.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7ad09f9660bf4674f385936988ffc93a2a381aa5
@@ -1066,7 +1066,7 @@
 59.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 377.set=ANDROID_RESOURCE
 300.set=DEX
-379.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_01_dark.png
+379.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_06_light.png
 209.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\anim\\abc_slide_out_bottom.xml
 210.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 223.set=ANDROID_RESOURCE
@@ -1083,7 +1083,7 @@
 627.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 354.set=ANDROID_RESOURCE
 139.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\core-3.3.0_831b3ae7ca9512cc1f17b0b5b4b54571661de84f
-33.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_play_circle_filled_white_36.png
+33.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\messenger_button_send_round_shadow.png
 489.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 336.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\folders\\2\\1f\\main\\META-INF\\services\\com.google.protobuf.GeneratedExtensionRegistryLoader
 507.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_forward_10_white_24.png
@@ -1382,7 +1382,7 @@
 366.set=ANDROID_RESOURCE
 616.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 121.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\messenger_button_send_white_small.xml
-642.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_18_light.png
+642.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_stop_grey600_48.png
 478.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 154.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_expand_09.png
 289.set=ANDROID_RESOURCE
@@ -1441,7 +1441,7 @@
 629.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_dae3f1ba1d93e894e4736dac0edf29630118b3e1
 374.set=ANDROID_RESOURCE
 18.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
-35.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\messenger_button_send_round_shadow.png
+35.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_play_circle_filled_white_36.png
 18.set=ANDROID_RESOURCE
 338.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_20_light.png
 509.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\cast_abc_scrubber_primary_mtrl_alpha.9.png
@@ -1559,7 +1559,7 @@
 88.set=ANDROID_RESOURCE
 339.set=ANDROID_RESOURCE
 313.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
-680.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_pause_grey600_48.png
+680.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_01_light.png
 11.set=ANDROID_RESOURCE
 714.set=ANDROID_RESOURCE
 175.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -1583,7 +1583,7 @@
 473.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 320.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\alertdialog_bigmap.xml
 239.set=ANDROID_RESOURCE
-670.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_04_dark.png
+670.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_forward_30_white_24.png
 33.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 117.set=ANDROID_RESOURCE
 182.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\messenger_button_blue_bg_selector.xml
@@ -1596,7 +1596,7 @@
 198.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 92.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\mr_media_play_dark.xml
 369.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
-216.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_cast_connected_white_24.png
+216.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\cast_ic_stop_circle_filled_grey600.png
 566.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_big_map.xml
 415.set=ANDROID_RESOURCE
 42.set=ANDROID_RESOURCE
@@ -1643,7 +1643,7 @@
 73.set=ANDROID_RESOURCE
 324.set=ANDROID_RESOURCE
 136.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
-30.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png
+30.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_21_dark.png
 486.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 307.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 657.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -1720,7 +1720,7 @@
 687.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_05_light.png
 81.set=ANDROID_RESOURCE
 332.set=ANDROID_RESOURCE
-517.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\com_facebook_button_like_icon_selected.png
+517.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_09_dark.png
 76.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_831bdff4b2d2a87fbed048558c628880b259fcef\\classes.dex
 255.set=ANDROID_RESOURCE
 380.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -1769,7 +1769,7 @@
 661.set=ANDROID_RESOURCE
 164.set=ANDROID_RESOURCE
 14.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\asd.png
-317.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_13_light.png
+317.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\cast_ic_notification_on.png
 179.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_83779a0f133976a173664769f301b7b59ce13701\\classes.dex
 462.set=ANDROID_RESOURCE
 180.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -1900,7 +1900,7 @@ count=728
 54.set=DEX
 709.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 305.set=ANDROID_RESOURCE
-3.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_16_dark.png
+3.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_11_dark.png
 97.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 588.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\anim\\design_snackbar_out.xml
 418.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_skip_next_grey600_36.png
@@ -1946,7 +1946,7 @@ count=728
 338.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 509.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 512.set=ANDROID_RESOURCE
-706.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_plusone_tall_off_client.png
+706.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\cast_abc_scrubber_control_off_mtrl_alpha.png
 94.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_expand_01.png
 218.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_f2596007d6939079ed73aeef7875b444f86b3883\\classes.dex
 568.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_96b575b9b85733ed05c351f4d35c94268c9ad8e4\\classes.dex
@@ -1972,7 +1972,7 @@ count=728
 412.set=ANDROID_RESOURCE
 58.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 367.set=ANDROID_RESOURCE
-378.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_06_light.png
+378.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_01_dark.png
 208.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png
 213.set=ANDROID_RESOURCE
 665.set=ANDROID_RESOURCE
@@ -2046,7 +2046,7 @@ count=728
 288.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 459.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 135.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-v21\\avd_hide_password.xml
-485.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_pause_circle_filled_white_36.png
+485.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png
 306.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_22_light.png
 656.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_login_facebook.xml
 474.set=ANDROID_RESOURCE
@@ -2078,7 +2078,7 @@ count=728
 646.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png
 158.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_ic_voice_search_api_material.xml
 329.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-nodpi-v4\\cast_album_art_placeholder.png
-679.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_01_light.png
+679.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\quantum_ic_pause_grey600_48.png
 252.set=ANDROID_RESOURCE
 68.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_skip_ad_label_border.xml
 680.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -2155,7 +2155,7 @@ count=728
 469.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\shape_resetpass.xml
 616.set=ANDROID_RESOURCE
 470.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
-29.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_21_dark.png
+29.file=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png
 641.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
 209.set=ANDROID_RESOURCE
 30.base=E\:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\resources-debug.ap_
