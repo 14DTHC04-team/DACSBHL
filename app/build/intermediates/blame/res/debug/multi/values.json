@@ -10028,11 +10028,11 @@
                 "from": {
                     "file": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 299,
+                        "startOffset": 446,
                         "endColumn": 39,
-                        "endOffset": 334
+                        "endOffset": 481
                     }
                 }
             },
@@ -10820,17 +10820,17 @@
                     "startLine": 1152,
                     "startColumn": 4,
                     "startOffset": 91283,
-                    "endColumn": 60,
-                    "endOffset": 91339
+                    "endColumn": 59,
+                    "endOffset": 91338
                 },
                 "from": {
                     "file": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 2,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 71,
-                        "endColumn": 60,
-                        "endOffset": 127
+                        "startOffset": 218,
+                        "endColumn": 59,
+                        "endOffset": 273
                     }
                 }
             },
@@ -10838,18 +10838,18 @@
                 "to": {
                     "startLine": 1153,
                     "startColumn": 4,
-                    "startOffset": 91344,
-                    "endColumn": 69,
+                    "startOffset": 91343,
+                    "endColumn": 70,
                     "endOffset": 91409
                 },
                 "from": {
                     "file": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 133,
-                        "endColumn": 69,
-                        "endOffset": 198
+                        "startOffset": 279,
+                        "endColumn": 70,
+                        "endOffset": 345
                     }
                 }
             },
@@ -11417,11 +11417,11 @@
                 "from": {
                     "file": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 260,
+                        "startOffset": 407,
                         "endColumn": 37,
-                        "endOffset": 293
+                        "endOffset": 440
                     }
                 }
             },
@@ -11778,11 +11778,11 @@
                 "from": {
                     "file": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 204,
+                        "startOffset": 351,
                         "endColumn": 54,
-                        "endOffset": 254
+                        "endOffset": 401
                     }
                 }
             },
@@ -11797,11 +11797,11 @@
                 "from": {
                     "file": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 340,
+                        "startOffset": 487,
                         "endColumn": 51,
-                        "endOffset": 387
+                        "endOffset": 534
                     }
                 }
             },

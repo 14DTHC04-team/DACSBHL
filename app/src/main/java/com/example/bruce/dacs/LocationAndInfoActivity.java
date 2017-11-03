@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.facebook.Profile;
 import com.google.firebase.auth.FirebaseAuth;
@@ -72,33 +73,16 @@ public class LocationAndInfoActivity extends AppCompatActivity {
         txtGreeting = (TextView) findViewById(R.id.txtDisplayName);
         txtEmail = (TextView) findViewById(R.id.txtEmail);
 
-        if (profile != null) {
+        if(user!=null) {
 
-
-            Picasso.with(this).load(profile.getProfilePictureUri(200,200).toString()).transform(new CircleTransform()).into(imgFriendProfilePicture);
-            SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-            //lay email fb da luu trong may' ra
-            String name = preferences.getString("OldEmail", "");
-            String Email1 = preferences.getString("Name", "");
-            if(!name.equalsIgnoreCase(""))
-            {
-                Email1 = name ;  /* Edit the value here*/
-            }
-            txtEmail.setText(Email1);
-
-            txtGreeting.setText(profile.getName());
-
-        } else {
-
-            if(user!=null) {
-
-                //neu ko dang nhap bang facebook thi` ...
-                Picasso.with(this).load(user.getPhotoUrl()).transform(new CircleTransform()).into(imgFriendProfilePicture);
-                txtGreeting.setText(user.getDisplayName());
-                txtEmail.setText(user.getEmail());
-            }
-        }
-//----------------------------------------------------------------------------------------------------------------------------------
+            //neu ko dang nhap bang facebook thi` ...
+            Picasso.with(this).load(user.getPhotoUrl()).transform(new CircleTransform()).into(imgFriendProfilePicture);
+            txtGreeting.setText(user.getDisplayName());
+            txtEmail.setText(user.getEmail());
+        }else
+        {
+            Toast.makeText(getApplicationContext(), "chua co user", Toast.LENGTH_SHORT).show();
+        }//----------------------------------------------------------------------------------------------------------------------------------
         //hien thi nut memu
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);

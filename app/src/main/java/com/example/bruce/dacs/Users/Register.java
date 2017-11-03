@@ -1,5 +1,8 @@
 package com.example.bruce.dacs.Users;
 
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -22,7 +25,7 @@ public class Register extends AppCompatActivity {
     FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
     Button btnOk;
     EditText edtEmail,edtPass,edtName;
-
+    ProgressDialog dialogRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +55,9 @@ public class Register extends AppCompatActivity {
         });
     }
     void Register(){
+        dialogRegister=new ProgressDialog(this);
+        dialogRegister.show();
+        dialogRegister.setMessage("Đang đăng ký .....");
         String email = edtEmail.getText().toString();
         String pass = edtPass.getText().toString();
         firebaseAuth.createUserWithEmailAndPassword(email, pass)
@@ -71,14 +77,36 @@ public class Register extends AppCompatActivity {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
                                             if (task.isSuccessful()) {
-                                                Toast.makeText(Register.this, "Register has successed", Toast.LENGTH_SHORT).show();
+                                                if(dialogRegister.isShowing()){
+                                                    dialogRegister.dismiss();
+                                                }
+                                                AlertDialog.Builder tb=new AlertDialog.Builder(Register.this)
+                                                        .setMessage("Register Success!,\nPlease check your mail! ")
+                                                        .setPositiveButton("Đóng", new DialogInterface.OnClickListener() {
+                                                            @Override
+                                                            public void onClick(DialogInterface dialog, int which) {
+                                                                dialog.dismiss();
+                                                            }
+                                                        });
+                                                tb.create().show();
                                             }
                                         }
                                     });
 
                         } else {
+                            if(dialogRegister.isShowing()){
+                                dialogRegister.dismiss();
+                            }
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(Register.this, "Register has failed", Toast.LENGTH_SHORT).show();
+                            AlertDialog.Builder tb1=new AlertDialog.Builder(Register.this)
+                                    .setMessage("Register failed !!")
+                                    .setPositiveButton("Đóng", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            dialog.dismiss();
+                                        }
+                                    });
+                            tb1.create().show();
                         }
 
                         // ...

@@ -51,21 +51,11 @@ public class MenuFragment extends Fragment {
                 String value = (String) listView.getItemAtPosition(position);
                 if(value == "Log out")
                 {
-                    Profile profile = Profile.getCurrentProfile();
-                    if(profile != null) {
-
-                        LoginManager.getInstance().logOut();
-                        getActivity().finish();
-                        Intent target = new Intent(getActivity(), LoginActivity.class);
-                        startActivity(target);
-                    }
-                    else
-                    {
-                        FirebaseAuth.getInstance().signOut();
-                        getActivity().finish();
-                        Intent target = new Intent(getActivity(), LoginActivity.class);
-                        startActivity(target);
-                    }
+                    LoginManager.getInstance().logOut();
+                    FirebaseAuth.getInstance().signOut();
+                    getActivity().finish();
+                    Intent target = new Intent(getActivity(), LoginActivity.class);
+                    startActivity(target);
                 }
                 if(value == "Zoom Map"){
                     Intent target = new Intent(getActivity(), BigMap.class);

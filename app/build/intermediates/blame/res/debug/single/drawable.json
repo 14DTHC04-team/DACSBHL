@@ -264,6 +264,10 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\473e422ace0fff46babb60e538b492d264416087\\output\\res\\drawable\\mr_vol_type_audiotrack_dark.xml"
     },
     {
+        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icongallery.png",
+        "source": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\drawable\\icongallery.png"
+    },
+    {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\c8c7df0266d84225dd100dfa8ffc0a6e9cb276cc\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
@@ -386,6 +390,10 @@
     {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_play_large.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\e55d1c52596197f206bcfc931a480f3be2d10aa2\\output\\res\\drawable\\cast_ic_mini_controller_play_large.xml"
+    },
+    {
+        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buttoncmt.png",
+        "source": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\drawable\\buttoncmt.png"
     },
     {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connected_light.xml",

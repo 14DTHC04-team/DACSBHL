@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.bruce.dacs.R;
@@ -69,8 +70,6 @@ public class Comment_Fragment extends android.support.v4.app.Fragment {
 
     private void Firebase_Comment() {
         comment_contructors = new ArrayList<>();
-        list_User=new ArrayList<>();
-        userImage=new ArrayList<>();
         mData = FirebaseDatabase.getInstance().getReference();
         mData.child("Comments").addChildEventListener(new ChildEventListener() {
             @Override
@@ -78,11 +77,9 @@ public class Comment_Fragment extends android.support.v4.app.Fragment {
                 final Comment_Contructor comment_contructor = dataSnapshot.getValue(Comment_Contructor.class);
                 comment_contructor.commentImages = new ArrayList<>();
                 if(location_ID == Integer.parseInt(comment_contructor.locationID)) {
-                    final String key=dataSnapshot.getKey();
                     for(DataSnapshot commentImage: dataSnapshot.getChildren()){
                         for(DataSnapshot child_of_CommentImage : commentImage.getChildren()){
                             comment_contructor.commentImages.add(child_of_CommentImage.getValue().toString());
-                            Toast.makeText(getContext(), comment_contructor.commentImages.size()+ "", Toast.LENGTH_SHORT).show();
                         }
                     }
                     mData.child("User").addChildEventListener(new ChildEventListener() {
@@ -144,37 +141,5 @@ public class Comment_Fragment extends android.support.v4.app.Fragment {
             }
         });
     }
-    private void Get_UserImage(){
-        list_User=new ArrayList<>();
-        userImage=new ArrayList<>();
-        mData = FirebaseDatabase.getInstance().getReference();
-        mData.child("User").addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
-                 Constructer_UserProfile constructer_userProfile=dataSnapshot.getValue(Constructer_UserProfile.class);
-                 userImage.add(constructer_userProfile.Image);
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }
 }

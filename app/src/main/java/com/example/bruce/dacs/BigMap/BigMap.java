@@ -1,15 +1,18 @@
 package com.example.bruce.dacs.BigMap;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -61,7 +64,7 @@ import java.util.List;
 
 import static com.example.bruce.dacs.R.id.map;
 
-public class BigMap extends FragmentActivity implements OnMapReadyCallback, DirectionFinderListener,MenumapAdapter.RecyclerViewClicklistener {
+public class BigMap extends FragmentActivity implements OnMapReadyCallback, DirectionFinderListener, MenumapAdapter.RecyclerViewClicklistener {
 
     private GoogleMap mMap;
 
@@ -72,8 +75,6 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
     String origin;
     String destination;
     LatLng myLocation;
-
-
 
 
     MenumapAdapter adapter;
@@ -126,7 +127,7 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
 
         //recyclerview
         listTourist = new ArrayList<>();
-        adapter = new MenumapAdapter(listTourist,BigMap.this);
+        adapter = new MenumapAdapter(listTourist, BigMap.this);
         recyclerView = (RecyclerView) findViewById(R.id.recycleView_BigMap);
 
         recyclerView.setHasFixedSize(true);
@@ -136,10 +137,11 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
 
     }
 
-    public void init(){
+    public void init() {
         btnOK = (Button) findViewById(R.id.btnSearch);
         edit = (EditText) findViewById(R.id.editText);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.item, menu);
@@ -180,27 +182,36 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
                 MarkerOptions option = new MarkerOptions();
                 option.title("You're here !!!");
                 //khong dung khi su dung may ao
-                option.snippet(gps.Address(latitude,longtitude));
+                option.snippet(gps.Address(latitude, longtitude));
                 option.position(myLocation);
                 option.icon(BitmapDescriptorFactory.fromResource(R.drawable.asd));
                 if (count == 1) {
 
                     currentMarker = mMap.addMarker(option);
-                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude,longtitude),14));
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longtitude), 14));
 
-                }
-                else{
+                } else {
                     currentMarker.remove();
                     currentMarker = mMap.addMarker(option);
                 }
             }
         });
 
-        myLocation = new LatLng(gps.getLatitude(),gps.getLongtitude());
+        myLocation = new LatLng(gps.getLatitude(), gps.getLongtitude());
         latitude = myLocation.latitude;
         longtitude = myLocation.longitude;
 
 
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         mMap.setMyLocationEnabled(true);
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setCompassEnabled(true);

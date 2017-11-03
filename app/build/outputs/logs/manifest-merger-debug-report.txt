@@ -1,20 +1,22 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:2:1-88:12
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:2:1-91:12
 	package
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:3:5-37
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:4:5-37
 		INJECTED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:3:5-51
 	xmlns:android
 		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
 		INJECTED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:6:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Admin\.android\build-cache\87997574ad2853f1d6c6f4c87f10a09d017f20a0\output\AndroidManifest.xml:19:5-66
 MERGED from [com.google.android.gms:play-services-analytics:11.0.2] C:\Users\Admin\.android\build-cache\6bb699627b23037199023b346467671e2b20e05d\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Admin\.android\build-cache\f529a8b43764faf11630c631a07f8a62fc7d6a5c\output\AndroidManifest.xml:18:5-66
@@ -28,9 +30,9 @@ MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Admin\.andr
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\Admin\.android\build-cache\6e44a5c0c54783db551e2bf0a3f1f5160e9e3548\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Admin\.android\build-cache\243394186d41ed8a3088644cbb9caacc0e792b29\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:7:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Admin\.android\build-cache\87997574ad2853f1d6c6f4c87f10a09d017f20a0\output\AndroidManifest.xml:20:5-78
 MERGED from [com.google.android.gms:play-services-analytics:11.0.2] C:\Users\Admin\.android\build-cache\6bb699627b23037199023b346467671e2b20e05d\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.android.gms:play-services-nearby:11.0.2] C:\Users\Admin\.android\build-cache\cd95c04e5c0124128dbe63664364f25c5514b8ca\output\AndroidManifest.xml:4:5-78
@@ -41,42 +43,44 @@ MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Admin\.andr
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\Admin\.android\build-cache\6e44a5c0c54783db551e2bf0a3f1f5160e9e3548\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Admin\.android\build-cache\243394186d41ed8a3088644cbb9caacc0e792b29\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:6:22-76
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:7:5-79
-	android:name
 		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:9:22-78
 uses-feature#android.hardware.location
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:10:5-12:35
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:11:5-13:35
 	android:required
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:12:9-32
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:13:9-32
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:11:9-49
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:12:9-49
 uses-feature#android.hardware.location.gps
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:13:5-15:35
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:14:5-16:35
 	android:required
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:15:9-32
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:16:9-32
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:14:9-53
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:15:9-53
 uses-library#com.google.android.maps
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:17:5-19:35
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:18:5-21:46
+	tools:ignore
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:21:9-43
 	android:required
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:19:9-32
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:20:9-32
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:18:9-47
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:19:9-47
 uses-feature#0x00020000
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:26:5-28:35
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:28:5-30:35
 MERGED from [com.google.android.gms:play-services-maps:11.0.2] C:\Users\Admin\.android\build-cache\ece4bbc1b02d9d23d412666e84194e2eb65d2a8a\output\AndroidManifest.xml:21:5-77
 	android:glEsVersion
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:27:9-41
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:29:9-41
 	android:required
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:28:9-32
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:30:9-32
 application
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:30:5-86:19
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:32:5-89:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Admin\.android\build-cache\258ec8fbfbc4ad2290c99a0cdff2d1a410399ca0\output\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.27.0] C:\Users\Admin\.android\build-cache\a764edf542f3d41219de37f2ed957cb2319ef6db\output\AndroidManifest.xml:28:5-29:19
 MERGED from [com.facebook.android:facebook-login:4.27.0] C:\Users\Admin\.android\build-cache\e9d729ba9fca45bea2901e2a2bfa0b23fb12550b\output\AndroidManifest.xml:28:5-29:19
@@ -91,7 +95,6 @@ MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Admin\.androi
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Admin\.android\build-cache\87997574ad2853f1d6c6f4c87f10a09d017f20a0\output\AndroidManifest.xml:23:5-26:19
 MERGED from [com.google.android.gms:play-services-analytics:11.0.2] C:\Users\Admin\.android\build-cache\6bb699627b23037199023b346467671e2b20e05d\output\AndroidManifest.xml:26:5-19
 MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Admin\.android\build-cache\f529a8b43764faf11630c631a07f8a62fc7d6a5c\output\AndroidManifest.xml:19:5-26:19
-MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:19:5-25:19
 MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Admin\.android\build-cache\e55d1c52596197f206bcfc931a480f3be2d10aa2\output\AndroidManifest.xml:4:5-8:19
 MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Admin\.android\build-cache\a7de9fba177f1bb28d70c65804a77860f3704768\output\AndroidManifest.xml:18:5-19
 MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Admin\.android\build-cache\473e422ace0fff46babb60e538b492d264416087\output\AndroidManifest.xml:22:5-20
@@ -129,9 +132,10 @@ MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Admin
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Admin\.android\build-cache\4a2df975e89288d015ca6cf5ff4b405114932885\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Admin\.android\build-cache\3cb7359cc5929f477aa7ea86db35543017e850de\output\AndroidManifest.xml:26:5-20
 MERGED from [com.google.firebase:firebase-auth:11.0.2] C:\Users\Admin\.android\build-cache\219102598e30eb2876706290497084100a7c2115\output\AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Admin\.android\build-cache\7515e36692df122b11e1d2bbacd432553da1ccd8\output\AndroidManifest.xml:18:5-20:19
 MERGED from [com.android.support:palette-v7:25.3.1] C:\Users\Admin\.android\build-cache\a9d7346e46be7533d1f268215684662342796e66\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\Admin\.android\build-cache\fcb9515dded97a8e152e2584c99513cb54ecde8c\output\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Admin\.android\build-cache\7515e36692df122b11e1d2bbacd432553da1ccd8\output\AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.firebase:firebase-core:11.0.2] C:\Users\Admin\.android\build-cache\427543d8185194dd3e107a71ca5c67cb7f1918ec\output\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Admin\.android\build-cache\67c91c52a0a61c274236fdb88ec7716e012ca2b3\output\AndroidManifest.xml:24:5-34:19
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\Admin\.android\build-cache\6e44a5c0c54783db551e2bf0a3f1f5160e9e3548\output\AndroidManifest.xml:24:5-28:19
@@ -146,93 +150,95 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Admin\.android
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Admin\.android\build-cache\ffd848a58a8d4af4802f4edbbaca4048f3fd0558\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Admin\.android\build-cache\c623baf189eaad19125e5415ed472f8752a1ebb0\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:33:9-41
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:35:9-41
 	android:supportsRtl
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:35:9-35
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:37:9-35
 	android:roundIcon
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:34:9-54
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:36:9-54
 	android:allowBackup
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:31:9-35
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:33:9-35
 	android:icon
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:32:9-43
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:34:9-43
 	android:theme
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:36:9-40
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:38:9-40
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:37:9-39:55
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:39:9-41:55
 	android:value
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:39:13-52
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:41:13-52
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:38:13-58
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:40:13-58
 activity#com.example.bruce.dacs.LoginActivity
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:41:9-47:20
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:43:9-50:20
+	android:theme
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:44:13-56
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:41:19-48
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:43:19-48
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:42:13-46:29
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:45:13-49:29
 action#android.intent.action.MAIN
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:43:17-69
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:46:17-69
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:43:25-66
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:46:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:45:17-77
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:48:17-77
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:45:27-74
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:48:27-74
 activity#com.facebook.CustomTabActivity
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:48:9-59:20
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:51:9-62:20
 	android:exported
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:50:13-36
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:53:13-36
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:49:13-58
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:52:13-58
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:51:13-58:29
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:54:13-61:29
 action#android.intent.action.VIEW
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:52:17-69
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:55:17-69
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:52:25-66
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:55:25-66
 category#android.intent.category.DEFAULT
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:54:17-76
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:57:17-76
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:54:27-73
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:57:27-73
 category#android.intent.category.BROWSABLE
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:55:17-78
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:58:17-78
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:55:27-75
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:58:27-75
 data
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:57:17-75
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:60:17-75
 	android:scheme
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:57:23-72
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:60:23-72
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:69:9-71:55
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:72:9-74:55
 	android:value
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:71:13-52
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:74:13-52
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:70:13-62
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:73:13-62
 activity#com.example.bruce.dacs.LocationAndInfoActivity
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:73:9-61
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:76:9-61
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:73:19-58
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:76:19-58
 activity#com.example.bruce.dacs.BigMap.BigMap
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:74:9-76:62
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:77:9-79:62
 	android:label
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:76:13-59
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:79:13-59
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:75:13-42
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:78:13-42
 activity#com.example.bruce.dacs.MoreInfo.InfoActivity
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:77:9-79:48
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:80:9-82:48
 	android:theme
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:79:13-45
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:82:13-45
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:78:13-50
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:81:13-50
 activity#com.example.bruce.dacs.Users.Register
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:80:9-52
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:83:9-52
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:80:19-49
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:83:19-49
 activity#com.example.bruce.dacs.Users.User_Profile
-ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:81:9-83:59
+ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:84:9-86:59
 	android:theme
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:83:13-56
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:86:13-56
 	android:name
-		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:82:13-47
+		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:85:13-47
 uses-sdk
 INJECTED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Admin\.android\build-cache\258ec8fbfbc4ad2290c99a0cdff2d1a410399ca0\output\AndroidManifest.xml:5:5-7:41
@@ -251,8 +257,6 @@ MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Admi
 MERGED from [com.google.android.gms:play-services-analytics:11.0.2] C:\Users\Admin\.android\build-cache\6bb699627b23037199023b346467671e2b20e05d\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Admin\.android\build-cache\f529a8b43764faf11630c631a07f8a62fc7d6a5c\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-auth-api-phone:11.0.2] C:\Users\Admin\.android\build-cache\ac67b7665064cdcbd5b11c0b0a9917f3c934d0bd\output\AndroidManifest.xml:3:3-41
-MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:11.0.2] C:\Users\Admin\.android\build-cache\780d6378353f2ffa9e43285f7d4f9db24c549856\output\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Admin\.android\build-cache\e55d1c52596197f206bcfc931a480f3be2d10aa2\output\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Admin\.android\build-cache\a7de9fba177f1bb28d70c65804a77860f3704768\output\AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Admin\.android\build-cache\473e422ace0fff46babb60e538b492d264416087\output\AndroidManifest.xml:20:5-43
@@ -296,11 +300,13 @@ MERGED from [com.android.support:recyclerview-v7:25.1.1] C:\Users\Admin\.android
 MERGED from [com.google.firebase:firebase-database:11.0.2] C:\Users\Admin\.android\build-cache\a22cf282bc2f8433be1777f8fdf62afe6ae4b341\output\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-database-connection:11.0.2] C:\Users\Admin\.android\build-cache\1e69536b3e2c1b1cd2ddd028ec0b65ee4686ab2d\output\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-auth:11.0.2] C:\Users\Admin\.android\build-cache\219102598e30eb2876706290497084100a7c2115\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Admin\.android\build-cache\7515e36692df122b11e1d2bbacd432553da1ccd8\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-storage:11.0.2] C:\Users\Admin\.android\build-cache\0558b40837a9bf0648a4f668595dd982ef6c305a\output\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-storage-common:11.0.2] C:\Users\Admin\.android\build-cache\2ed66af71db28371e03b16f9e6dc686b0d679417\output\AndroidManifest.xml:3:5-43
 MERGED from [com.android.support:palette-v7:25.3.1] C:\Users\Admin\.android\build-cache\a9d7346e46be7533d1f268215684662342796e66\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\Admin\.android\build-cache\fcb9515dded97a8e152e2584c99513cb54ecde8c\output\AndroidManifest.xml:7:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.2] C:\Users\Admin\.android\build-cache\780d6378353f2ffa9e43285f7d4f9db24c549856\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Admin\.android\build-cache\7515e36692df122b11e1d2bbacd432553da1ccd8\output\AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:multidex:1.0.0] C:\Users\Admin\.android\build-cache\41fd203fac97e8c7a6420695d78355ac82e1aac1\output\AndroidManifest.xml:18:5-42
 MERGED from [com.google.firebase:firebase-core:11.0.2] C:\Users\Admin\.android\build-cache\427543d8185194dd3e107a71ca5c67cb7f1918ec\output\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Admin\.android\build-cache\67c91c52a0a61c274236fdb88ec7716e012ca2b3\output\AndroidManifest.xml:17:5-43
@@ -390,24 +396,6 @@ action#com.google.android.gms.appinvite.ACTION_PREVIEW
 ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Admin\.android\build-cache\f529a8b43764faf11630c631a07f8a62fc7d6a5c\output\AndroidManifest.xml:22:17-89
 	android:name
 		ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Admin\.android\build-cache\f529a8b43764faf11630c631a07f8a62fc7d6a5c\output\AndroidManifest.xml:22:25-87
-activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:20:9-189
-	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:20:129-162
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:20:163-187
-	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:20:69-128
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:20:19-68
-service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:24:9-184
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:24:64-87
-	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:24:88-182
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:24:18-63
 receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
 ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Admin\.android\build-cache\e55d1c52596197f206bcfc931a480f3be2d10aa2\output\AndroidManifest.xml:5:9-99
 	android:name
@@ -456,6 +444,24 @@ ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users
 		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Admin\.android\build-cache\750a7a333f978d76c12beea7b952e2594dc75e51\output\AndroidManifest.xml:25:118-142
 	android:name
 		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Admin\.android\build-cache\750a7a333f978d76c12beea7b952e2594dc75e51\output\AndroidManifest.xml:25:19-93
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Admin\.android\build-cache\40f24df19463611fbf1494c376147ce38124b865\output\AndroidManifest.xml:24:18-63
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Admin\.android\build-cache\7515e36692df122b11e1d2bbacd432553da1ccd8\output\AndroidManifest.xml:19:9-172
 	android:exported

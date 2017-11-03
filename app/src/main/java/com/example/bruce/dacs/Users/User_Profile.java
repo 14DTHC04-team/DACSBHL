@@ -69,15 +69,13 @@ public class User_Profile extends AppCompatActivity {
     CollapsingToolbarLayout toolbarLayout;
     TextView txtUserEmail,txtUserPass,txtUserProfile_Name_toolbar;
     ImageView imageView;
-    ImageButton btnchange,btnCalendar;
-    EditText txtUserName,txtUserPhone,txtUserBirthday,edtold,edtnew,edtconfirm;
+    ImageButton btnchange;
+    EditText txtUserName,edtold,edtnew,edtconfirm;
     Button btnUpdate_information,btnSave,btnsave,btncancle;
-    LinearLayout linearcanlendar;
     DatabaseReference mData;
     FirebaseAuth firebaseAuth=FirebaseAuth.getInstance();
     Dialog dia ;
-    Calendar calendar= Calendar.getInstance();
-    SimpleDateFormat spddate = new SimpleDateFormat("dd/MM/yyyy");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,7 +85,6 @@ public class User_Profile extends AppCompatActivity {
         mData=FirebaseDatabase.getInstance().getReference();
 
         initilize();
-        btnCalendar.setEnabled(false);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -127,17 +124,14 @@ public class User_Profile extends AppCompatActivity {
 //            }
 //        });
 
-        UserInfomation(profile,user);
+        UserInfomation();
         btnUpdate_information.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 txtUserName.setEnabled(true);
-                txtUserPhone.setEnabled(true);
-                txtUserBirthday.setEnabled(true);
+
                 btnSave.setEnabled(true);
                 btnUpdate_information.setEnabled(false);
-                btnCalendar.setEnabled(true);
-                linearcanlendar.setBackgroundColor(Color.BLACK);
                 if(profile!=null) {
                     txtUserName.setEnabled(false);
                 }
@@ -149,35 +143,20 @@ public class User_Profile extends AppCompatActivity {
             public void onClick(View v) {
                 btnSave.setEnabled(false);
                 txtUserName.setEnabled(false);
-                txtUserPhone.setEnabled(false);
-                txtUserBirthday.setEnabled(false);
-                btnCalendar.setEnabled(false);
+
                 btnUpdate_information.setEnabled(true);
-                linearcanlendar.setBackgroundColor(Color.GRAY);
                 if(user!=null) {
-                    Constructer_UserProfile constructerUserProfile = new Constructer_UserProfile(txtUserEmail.getText().toString(), txtUserName.getText().toString(),txtUserPhone.getText().toString(),txtUserBirthday.getText().toString());
+                    Constructer_UserProfile constructerUserProfile = new Constructer_UserProfile(txtUserEmail.getText().toString(), txtUserName.getText().toString(),user.getPhotoUrl().toString());
                     UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
                             .setDisplayName(txtUserName.getText().toString().trim())
                             .build();
                     user.updateProfile(profileUpdates);
-
-                    String tempt = FirebaseAuth.getInstance().getCurrentUser().getEmail();
-                    int index = tempt.indexOf(".");
-                    String key = tempt.substring(0, index);
+                    txtUserName.setText(txtUserName.getText().toString().trim());
+                    txtUserProfile_Name_toolbar.setText(txtUserName.getText().toString().trim());
                     mData.child("User").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(constructerUserProfile);
                     Toast.makeText(User_Profile.this, "Save Successful !", Toast.LENGTH_SHORT).show();
                 }
-                if(profile!=null)
-                {
 
-                    String Email=txtUserEmail.getText().toString();
-                    int index = Email.indexOf(".");
-                    String key = Email.substring(0, index);
-                    Constructer_UserProfile constructerUserProfile = new Constructer_UserProfile(Email,txtUserName.getText().toString(),txtUserPhone.getText().toString(),txtUserBirthday.getText().toString());
-                    mData.child("User").child("fb_"+key).setValue(constructerUserProfile);
-                    Toast.makeText(User_Profile.this, "Save Successful !", Toast.LENGTH_SHORT).show();
-
-                }
             }
         });
             btnchange.setOnClickListener(new View.OnClickListener() {
@@ -240,131 +219,35 @@ public class User_Profile extends AppCompatActivity {
                     });
                 }
             });
-        btnCalendar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                datePicker();
-            }
-        });
+
     }
 
-    private void datePicker() {
-            DatePickerDialog.OnDateSetListener callback=new DatePickerDialog.OnDateSetListener() {
-                @Override
-                public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                    calendar.set(Calendar.YEAR,year);
-                    calendar.set(Calendar.MONTH,month);
-                    calendar.set(Calendar.DATE,dayOfMonth);
-                    txtUserBirthday.setText(spddate.format(calendar.getTime()));
 
-
-                }
-            };
-            DatePickerDialog datePickerDialog=new DatePickerDialog(
-                    User_Profile.this,
-                    callback,
-                    calendar.get(Calendar.YEAR),
-                    calendar.get(Calendar.MONTH),
-                    calendar.get(Calendar.DATE));
-            datePickerDialog.show();
-        }
 
     public void initilize(){
-
-
-         linearcanlendar= (LinearLayout) findViewById(R.id.linearCalendar);
         txtUserEmail = (TextView) findViewById(txtUserProfile_Mail);
         txtUserName = (EditText) findViewById(R.id.txtUserProfile_Name);
         txtUserPass = (TextView) findViewById(R.id.txtUserProfile_Pass);
-        txtUserPhone = (EditText) findViewById(R.id.txtUserProfile_Phone);
-        txtUserBirthday = (EditText) findViewById(R.id.txtUserProfile_Birthday);
+
         imageView = (ImageView) findViewById(R.id.imageView) ;
         toolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
         txtUserProfile_Name_toolbar = (TextView) findViewById(R.id.txtUserProfile_Name_toolbar);
         btnUpdate_information = (Button) findViewById(R.id.btnUpdate_information);
         btnSave= (Button) findViewById(R.id.btnSave);
         btnchange= (ImageButton) findViewById(R.id.btnchangepass);
-        btnCalendar= (ImageButton) findViewById(R.id.btnCalendar);
 
         comment_contructors=new ArrayList<>();
 
     }
-    public void UserInfomation(final Profile profile,final FirebaseUser user)
+    public void UserInfomation()
     {
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        //lay email fb da luu trong may' ra
-        final String name = preferences.getString("OldEmail", "");
-        String Email1 = preferences.getString("Name", "");
-        if(!name.equalsIgnoreCase(""))
-        {
-            Email1 = name ;  /* Edit the value here*/
+        if(user != null){
+            txtUserEmail.setText(user.getEmail());
+            txtUserName.setText(user.getDisplayName());
+            txtUserProfile_Name_toolbar.setText(user.getDisplayName());
+
         }
-        final String Email = Email1;
-        mData = FirebaseDatabase.getInstance().getReference();
-        mData.child("User").addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                Constructer_UserProfile currentUser = dataSnapshot.getValue(Constructer_UserProfile.class);
 
-                if(profile != null){
-                    if(dataSnapshot.getKey().equals(user.getUid())) {
-                        txtUserEmail.setText(currentUser.Email);
-                        txtUserName.setText(currentUser.Name);
-                        txtUserBirthday.setText(currentUser.BirthDay);
-                        txtUserPhone.setText(currentUser.PhoneNumber);
-                        txtUserProfile_Name_toolbar.setText(currentUser.Name);
-                    }
-                }
-                if(user != null){
-                    if(currentUser.Email.equals(user.getEmail())) {
-                        txtUserEmail.setText(currentUser.Email);
-                        txtUserName.setText(currentUser.Name);
-                        txtUserBirthday.setText(currentUser.BirthDay);
-                        txtUserPhone.setText(currentUser.PhoneNumber);
-                        txtUserProfile_Name_toolbar.setText(currentUser.Name);
-                    }
-                }
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-                Constructer_UserProfile currentUser = dataSnapshot.getValue(Constructer_UserProfile.class);
-                if(profile != null){
-                    if(currentUser.Email.equals(Email)) {
-                        txtUserEmail.setText(currentUser.Email);
-                        txtUserName.setText(currentUser.Name);
-                        txtUserBirthday.setText(currentUser.BirthDay);
-                        txtUserPhone.setText(currentUser.PhoneNumber);
-                        txtUserProfile_Name_toolbar.setText(currentUser.Name);
-                    }
-                }
-                if(user != null){
-                    if(currentUser.Email.equals(user.getEmail())) {
-                        txtUserEmail.setText(currentUser.Email);
-                        txtUserName.setText(currentUser.Name);
-                        txtUserBirthday.setText(currentUser.BirthDay);
-                        txtUserPhone.setText(currentUser.PhoneNumber);
-                        txtUserProfile_Name_toolbar.setText(currentUser.Name);
-                    }
-                }
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
     }
     @RequiresApi(api = Build.VERSION_CODES.N)
     FirebaseStorage storage=FirebaseStorage.getInstance();
@@ -401,7 +284,7 @@ public class User_Profile extends AppCompatActivity {
                     // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
 
                     Uri downloadUrl = taskSnapshot.getDownloadUrl();
-                    Log.d("aasd",downloadUrl.toString());
+
                     mData.child("User").child(firebaseAuth.getCurrentUser().getUid()).child("Image").setValue(downloadUrl.toString());
                     UserProfileChangeRequest profileChangeRequest=new UserProfileChangeRequest.Builder()
 
@@ -416,23 +299,9 @@ public class User_Profile extends AppCompatActivity {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
-    public String Username(Profile profile,FirebaseUser user){
 
-        if(profile != null){
-            return  profile.getName();
-        }
-        if(user != null){
-            return  user.getDisplayName();
-        }
-        else {
-            return null;
-        }
-    }
     public Uri ImageUser ( Profile profile,FirebaseUser user)
     {
-        if(profile != null){
-            return  profile.getProfilePictureUri(200,200);
-        }
         if(user != null){
             return  user.getPhotoUrl();
         }
