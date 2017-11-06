@@ -8,6 +8,7 @@
     tools:context="com.example.bruce.dacs.Users.User_Profile"
     tools:showIn="@layout/activity_user__profile">
 <LinearLayout
+    android:layout_marginTop="100dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -16,7 +17,6 @@
         android:id="@+id/txtUserProfile_Mail"
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:background="#E0E0E0"
         android:drawableLeft="@drawable/ic_mail_ru_white_24dp"

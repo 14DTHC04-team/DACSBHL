@@ -18,12 +18,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
+import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -55,6 +57,7 @@ import com.squareup.picasso.Picasso;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -88,7 +91,6 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
     DrawerLayout Drawer;
 
 
-    Marker currentMarker;
     int r = 0;
     int count = 0;
 
@@ -119,11 +121,9 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
         });
         Drawer = (DrawerLayout) findViewById(R.id.drawer_map);
 
-        //searchView
-        searchView = (SearchView) findViewById(R.id.searchView);
-        searchView.setFocusable(false);
-        searchView.setIconifiedByDefault(false);
-        searchView.setQueryHint("Search");
+        //Editext chuyen searchView
+        searchView = (SearchView) findViewById(R.id.searchInten);
+
 
         //recyclerview
         listTourist = new ArrayList<>();
@@ -134,6 +134,31 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
         adapter.setClickListener(BigMap.this);
         recyclerView.setLayoutManager(new LinearLayoutManager(BigMap.this));
         recyclerView.setAdapter(adapter);
+
+
+        Search();
+    }
+
+    private void Search() {
+        searchView.setFocusable(false);
+        searchView.setIconifiedByDefault(false);
+        searchView.setQueryHint("Nhập địa điểm....");
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                if(!TextUtils.isEmpty(newText.toString())){
+                    Intent intent=new Intent(BigMap.this,SearchLocation.class);
+                    intent.putExtra("Keyword",newText);
+                    startActivity(intent);
+                }
+                return false;
+            }
+        });
 
     }
 
@@ -177,22 +202,10 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
                 count++;
                 origin = location.getLatitude() + ", " + location.getLongitude();
                 myLocation = new LatLng(location.getLatitude(), location.getLongitude());
-                latitude = location.getLatitude();
-                longtitude = location.getLongitude();
-                MarkerOptions option = new MarkerOptions();
-                option.title("You're here !!!");
-                //khong dung khi su dung may ao
-                option.snippet(gps.Address(latitude, longtitude));
-                option.position(myLocation);
-                option.icon(BitmapDescriptorFactory.fromResource(R.drawable.asd));
-                if (count == 1) {
 
-                    currentMarker = mMap.addMarker(option);
+                if (count == 1) {
                     mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longtitude), 14));
 
-                } else {
-                    currentMarker.remove();
-                    currentMarker = mMap.addMarker(option);
                 }
             }
         });
@@ -300,11 +313,13 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
                 TextView txttitle = (TextView) view.findViewById(R.id.txtTitle);
                 TextView txtsnippet = (TextView) view.findViewById(R.id.txtSnippet);
                 ImageView imgLocation = (ImageView) view.findViewById(R.id.imgInfoWindow);
+                RatingBar ratingBar = (RatingBar) view.findViewById(R.id.ratingBarInfoWindow);
 
                 txttitle.setText(marker.getTitle());
                 txtsnippet.setText(marker.getSnippet());
                 for(Tourist_Location t : listTourist){
                     if(t.LocationName.equals(marker.getTitle())){
+                        ratingBar.setRating(t.star);
                         Picasso.with(BigMap.this).load(t.LocationImg).into(imgLocation);
                     }
                 }
@@ -330,7 +345,7 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
 
 //--------------------------------------------------tim dia diem-------------------------------------------------------------------------------------
 
-        SearchLocation(searchView,origin);
+
 
 //------------------------------------------------------------------------------------------------------------------------------------
 
@@ -420,7 +435,7 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
                                 .strokeColor(Color.RED)
                                 .fillColor(0x44ff0000));
 
-                        mMap.addMarker(new MarkerOptions().position(myLocation).title("You're here").snippet(gps.Address(latitude, longtitude)).icon(BitmapDescriptorFactory.fromResource(R.drawable.asd)));
+
                         Firebase_Tourist_Location(latitude, longtitude, value1);
                     }
                 }
@@ -428,23 +443,34 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
         });
     }
 
-    private void SearchLocation(final SearchView searchView,final String origin){
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            String destination = "";
+    public void getRatingStar(final ArrayList<Tourist_Location> listTourist){
+        final RequestQueue requestQueue = Volley.newRequestQueue(getApplication());
+        final JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Server.url_RatingStar, new Response.Listener<JSONArray>() {
             @Override
-            public boolean onQueryTextSubmit(String query) {
-
-                destination = query;
-                sendRequest(origin,destination);
-                searchView.clearFocus();
-                return false;
+            public void onResponse(JSONArray response) {
+                if(response != null){
+                    for (int i = 0;i < response.length(); i++){
+                        try{
+                            JSONObject jsonObject = response.getJSONObject(i);
+                            for(Tourist_Location tl : listTourist)
+                                if(jsonObject.getInt("location_ID") == tl.location_ID) {
+                                    tl.star = Float.parseFloat(jsonObject.getString("Star"));
+                                    break;
+                                }
+                        }
+                        catch(JSONException e){
+                            e.printStackTrace();
+                        }
+                    }
+                }
             }
-
+        }, new Response.ErrorListener() {
             @Override
-            public boolean onQueryTextChange(String newText) {
-                return false;
+            public void onErrorResponse(VolleyError error) {
+
             }
         });
+        requestQueue.add(jsonArrayRequest);
     }
     //Marker myMarker;
     Tourist_Location tourist_location;
@@ -473,7 +499,7 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
                                 double distance = Radius(myLat, myLng, tourist_location.Latitude, tourist_location.Longtitude);
                                 tourist_location.Distance = distance;
                                 listTourist.add(tourist_location);
-
+                                getRatingStar(listTourist);
                                 final  LatLng LatLgData = new LatLng(tourist_location.Latitude,tourist_location.Longtitude);
                                 mMap.addMarker(new MarkerOptions().position(LatLgData).title(tourist_location.LocationName).snippet(tourist_location.Address).icon(null));
 
@@ -501,8 +527,9 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
 
                                     tourist_location.Distance = distance;
                                     listTourist.add(tourist_location);
+                                    getRatingStar(listTourist);
                                     final LatLng LatLgData = new LatLng(tourist_location.Latitude, tourist_location.Longtitude);
-                                    mMap.addMarker(new MarkerOptions().position(LatLgData).title(listTourist.get(i).LocationName).snippet(listTourist.get(i).Address).icon(null));
+                                    mMap.addMarker(new MarkerOptions().position(LatLgData).title(tourist_location.LocationName).snippet(tourist_location.Address).icon(null));
 
 //                PicassoMarker marker = new PicassoMarker(myMarker);
 //                Picasso.with(BigMap.this).load(tourist_location.LocationImg).resize(150,150).centerCrop().into(marker);
@@ -519,7 +546,6 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
                                             // return Integer.valueOf(obj2.empId).compareTo(obj1.empId); // To compare integer values
                                         }
                                     });
-
 //---------------------------------------------------------------------------------------------------------------------------------------------------
                                     adapter.notifyDataSetChanged();
                                 }
@@ -712,6 +738,17 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
 
             polylinePaths.add(mMap.addPolyline(polylineOptions));
         }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+            if(!TextUtils.isEmpty(searchView.getQuery().toString())){
+                searchView.setQuery("",false);
+                searchView.requestFocus();
+                searchView.clearFocus();
+
+            }
     }
 }
 //class PicassoMarker implements Target {

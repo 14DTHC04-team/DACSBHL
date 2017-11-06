@@ -56,12 +56,12 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\473e422ace0fff46babb60e538b492d264416087\\output\\res\\layout\\mr_chooser_dialog.xml"
     },
     {
-        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\c8c7df0266d84225dd100dfa8ffc0a6e9cb276cc\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
-    },
-    {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\f2197bc5308015bdbe8947921c03cf8bff2ad509\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c8c7df0266d84225dd100dfa8ffc0a6e9cb276cc\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\info_adapter.xml",
@@ -106,6 +106,10 @@
     {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_write_comment.xml",
         "source": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\layout\\fragment_write_comment.xml"
+    },
+    {
+        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item.xml",
+        "source": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\layout\\item.xml"
     },
     {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alertdialog_bigmap.xml",
@@ -348,6 +352,10 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\c8c7df0266d84225dd100dfa8ffc0a6e9cb276cc\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search_location.xml",
+        "source": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\layout\\activity_search_location.xml"
+    },
+    {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\0ba29afa6dffc8e9190935ad344a0ca743140460\\output\\res\\layout\\messenger_button_send_white_large.xml"
     },
@@ -378,6 +386,14 @@
     {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\c8c7df0266d84225dd100dfa8ffc0a6e9cb276cc\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_search_location.xml",
+        "source": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\layout\\adapter_search_location.xml"
+    },
+    {
+        "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_write_comment.xml",
+        "source": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\src\\main\\res\\layout\\activity_write_comment.xml"
     },
     {
         "merged": "E:\\Java\\HiWhereIAm\\HiWhereIAm\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",

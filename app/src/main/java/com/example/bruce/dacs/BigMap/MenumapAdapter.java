@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.example.bruce.dacs.R;
@@ -21,7 +22,7 @@ import java.util.ArrayList;
 
 public class MenumapAdapter extends RecyclerView.Adapter<MenumapAdapter.ViewHolder> {
 
-    ArrayList<Tourist_Location> tourist_locations;
+    ArrayList<Tourist_Location> tourist_locations = new ArrayList<>();
     RecyclerViewClicklistener clicklistener;
     Context context;
 
@@ -43,6 +44,7 @@ public class MenumapAdapter extends RecyclerView.Adapter<MenumapAdapter.ViewHold
         final Tourist_Location tourist_location = tourist_locations.get(position);
         holder.txtAddress.setText(tourist_location.Address);
         holder.locationName.setText(tourist_location.LocationName);
+        holder.ratingBar.setRating(tourist_location.star);
         Picasso.with(context).load(tourist_location.LocationImg).into(holder.imageView, new Callback() {
             @Override
             public void onSuccess() {
@@ -65,10 +67,12 @@ public class MenumapAdapter extends RecyclerView.Adapter<MenumapAdapter.ViewHold
         ImageView imageView;
         TextView txtAddress,locationName;
         ProgressBar progressBar;
+        RatingBar ratingBar;
         public ViewHolder(View itemView) {
             super(itemView);
 
             itemView.setOnClickListener(this);
+            ratingBar = (RatingBar) itemView.findViewById(R.id.ratingStar);
             locationName = (TextView) itemView.findViewById(R.id.txtLocationName);
             imageView = (ImageView) itemView.findViewById(R.id.imageViewAdapter);
             txtAddress = (TextView) itemView.findViewById(R.id.txtAddress);
@@ -123,7 +127,7 @@ public class MenumapAdapter extends RecyclerView.Adapter<MenumapAdapter.ViewHold
 //        return row;
 //    }
 
-    //    Context myContext;
+//    Context myContext;
 //    int myLayout;
 //    List<Constructor_Menumap> myList;
 //

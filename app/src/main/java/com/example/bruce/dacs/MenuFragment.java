@@ -36,7 +36,7 @@ public class MenuFragment extends Fragment {
         mView = (ViewGroup) inflater.inflate(R.layout.activity_menu_fragment,container,false);
 
         String[] menuItem = {"My profile",
-                            "Zoom Map",
+                            "Map",
                             "Log out",
                             "Help"};
         listView = (ListView)mView.findViewById(R.id.Menu);
@@ -57,7 +57,7 @@ public class MenuFragment extends Fragment {
                     Intent target = new Intent(getActivity(), LoginActivity.class);
                     startActivity(target);
                 }
-                if(value == "Zoom Map"){
+                if(value == "Map"){
                     Intent target = new Intent(getActivity(), BigMap.class);
                     startActivity(target);
                 }

@@ -48,7 +48,7 @@ public class Comment_Adapter extends RecyclerView.Adapter<Comment_Adapter.ViewHo
     public void onBindViewHolder(final ViewHolder holder, int position) {
         final Comment_Contructor cC = comment_contructors.get(position);
         holder.txtComment.setText(cC.comment);
-        holder.txtDateOfComment.setText("Since: 11:45 pm 1/1/96");
+        holder.txtDateOfComment.setText(cC.date);
         holder.txtUsername.setText(cC.userName);
         Picasso.with(context).load(cC.userImage).into(holder.userImage);
 

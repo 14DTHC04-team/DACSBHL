@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#880E4F"
+            android:background="#6A5ACD"
             >
             <LinearLayout
                 android:orientation="vertical"
@@ -30,10 +30,10 @@
                     android:text="Title"/>
                 <RatingBar
                     android:id="@+id/ratingBar_Main"
-                    android:isIndicator="false"
+
                     style="@style/RatingBar"
                     android:layout_width="wrap_content"
-                    android:contextClickable="true"
+
                     android:rating="3.5"
                     android:layout_height="wrap_content"
                     android:progressTint="#FFD600" />
@@ -55,12 +55,13 @@
     </android.support.v4.view.ViewPager>
 
     <android.support.design.widget.FloatingActionButton
+
         android:id="@+id/floatingActionButton_Comment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_gravity="bottom|right"
-        android:layout_marginBottom="4dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
         android:src="@drawable/comment_icon_50dp"
         app:backgroundTint="#FAFAFA"
         app:fabSize="mini" />

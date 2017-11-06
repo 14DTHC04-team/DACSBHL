@@ -8,9 +8,17 @@ public class Constructer_UserProfile {
     public String Email;
     public String Name;
     public String Image = "";
+    public String Hobbie;
 
 
     public Constructer_UserProfile() {
+    }
+
+    public Constructer_UserProfile(String email, String name, String image, String hobbie) {
+        Email = email;
+        Name = name;
+        Image = image;
+        Hobbie = hobbie;
     }
 
     public Constructer_UserProfile(String email, String name, String image) {
@@ -18,5 +26,4 @@ public class Constructer_UserProfile {
         Name = name;
         Image = image;
     }
-
 }

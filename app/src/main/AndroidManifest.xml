@@ -31,6 +31,8 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -40,7 +42,8 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
-        <activity android:name=".LoginActivity"
+        <activity
+            android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -80,12 +83,14 @@
         <activity
             android:name=".MoreInfo.InfoActivity"
             android:theme="@style/AppTheme." />
-        <activity android:name=".Users.Register" />
+        <activity android:name=".Users.Register"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".Users.User_Profile"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
+        <activity android:name=".BigMap.SearchLocation"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MoreInfo.Write_Comment_Activity"></activity>
     </application>
 
 </manifest>

@@ -18,11 +18,12 @@ public class Tourist_Location {
 
     public int province_ID;
 
+    public float star;
     public double Distance = 0.0;
     public Tourist_Location() {
     }
 
-    public Tourist_Location(int location_ID, String locationName, double latitude, double longtitude, String locationImg, String address, String basicInfo, int province_ID, double distance) {
+    public Tourist_Location(int location_ID, String locationName, double latitude, double longtitude, String locationImg, String address, String basicInfo, int province_ID, float star, double distance) {
         this.location_ID = location_ID;
         LocationName = locationName;
         Latitude = latitude;
@@ -31,6 +32,7 @@ public class Tourist_Location {
         Address = address;
         BasicInfo = basicInfo;
         this.province_ID = province_ID;
+        this.star = star;
         Distance = distance;
     }
 }

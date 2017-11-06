@@ -256,7 +256,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                             }
                             Intent target = new Intent(LoginActivity.this, LocationAndInfoActivity.class);
                             startActivity(target);
-                            Constructer_UserProfile constructerUserProfile = new Constructer_UserProfile(FirebaseAuth.getInstance().getCurrentUser().getEmail(),FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString());
+                            Constructer_UserProfile constructerUserProfile = new Constructer_UserProfile(FirebaseAuth.getInstance().getCurrentUser().getEmail(),FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString(), "2,3,4,5");
                             mData.child("User").child(firebaseAuth.getCurrentUser().getUid()).setValue(constructerUserProfile);
 
                         } else {
@@ -351,7 +351,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                                 progressDialoglogin.dismiss();
                             }
                             startActivity(new Intent(getApplicationContext(), LocationAndInfoActivity.class));
-                            Constructer_UserProfile constructerUserProfile = new Constructer_UserProfile(FirebaseAuth.getInstance().getCurrentUser().getEmail(),FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString());
+                            Constructer_UserProfile constructerUserProfile = new Constructer_UserProfile(FirebaseAuth.getInstance().getCurrentUser().getEmail(),FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString(),"2,3,4,5");
                             mData.child("User").child(firebaseAuth.getCurrentUser().getUid()).setValue(constructerUserProfile);
                         } else {
 
@@ -410,7 +410,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                                     startActivity(new Intent(getApplicationContext(),LocationAndInfoActivity.class));
 
                                     //day thong tin ngdung len Firebase
-                                    Constructer_UserProfile constructerUserProfile = new Constructer_UserProfile(FirebaseAuth.getInstance().getCurrentUser().getEmail(),FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString());
+                                    Constructer_UserProfile constructerUserProfile = new Constructer_UserProfile(FirebaseAuth.getInstance().getCurrentUser().getEmail(),FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString(),"2,3,4,5");
 
                                     mData.child("User").child(firebaseAuth.getCurrentUser().getUid()).setValue(constructerUserProfile);
                           //      }

@@ -47,8 +47,10 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
@@ -97,10 +99,16 @@
         <activity
             android:name="com.example.bruce.dacs.MoreInfo.InfoActivity"
             android:theme="@style/AppTheme." />
-        <activity android:name="com.example.bruce.dacs.Users.Register" />
+        <activity
+            android:name="com.example.bruce.dacs.Users.Register"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.bruce.dacs.Users.User_Profile"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.bruce.dacs.BigMap.SearchLocation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.bruce.dacs.MoreInfo.Write_Comment_Activity" />
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
