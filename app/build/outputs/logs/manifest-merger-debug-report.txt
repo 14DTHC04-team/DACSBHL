@@ -17,6 +17,7 @@ ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:2:1-96
 		INJECTED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.firebase:geofire-android:2.1.2] C:\Users\Admin\.android\build-cache\3d44ecefa49b5a564426b6708f3cccc74e38be78\output\AndroidManifest.xml:4:3-64
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Admin\.android\build-cache\87997574ad2853f1d6c6f4c87f10a09d017f20a0\output\AndroidManifest.xml:19:5-66
 MERGED from [com.google.android.gms:play-services-analytics:11.0.2] C:\Users\Admin\.android\build-cache\6bb699627b23037199023b346467671e2b20e05d\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Admin\.android\build-cache\f529a8b43764faf11630c631a07f8a62fc7d6a5c\output\AndroidManifest.xml:18:5-66
@@ -257,6 +258,7 @@ ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:93:9-7
 		ADDED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml:93:19-66
 uses-sdk
 INJECTED from E:\Java\HiWhereIAm\HiWhereIAm\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.firebase:geofire-android:2.1.2] C:\Users\Admin\.android\build-cache\3d44ecefa49b5a564426b6708f3cccc74e38be78\output\AndroidManifest.xml:2:3-70
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Admin\.android\build-cache\258ec8fbfbc4ad2290c99a0cdff2d1a410399ca0\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.27.0] C:\Users\Admin\.android\build-cache\a764edf542f3d41219de37f2ed957cb2319ef6db\output\AndroidManifest.xml:24:5-26:41
 MERGED from [com.facebook.android:facebook-login:4.27.0] C:\Users\Admin\.android\build-cache\e9d729ba9fca45bea2901e2a2bfa0b23fb12550b\output\AndroidManifest.xml:24:5-26:41

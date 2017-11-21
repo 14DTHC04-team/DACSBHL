@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.firebase.geofire.GeoFire;
+import com.firebase.geofire.GeoLocation;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -18,12 +20,17 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Created by BRUCE on 4/26/2017.
  */
 
 public class MapsFragment extends Fragment implements OnMapReadyCallback {
+    GeoFire geoFire;
+    private DatabaseReference LatLngUser;
 
     GoogleMap mMap;
     View mView;
@@ -36,6 +43,8 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LatLngUser = FirebaseDatabase.getInstance().getReference("LatLngUser");
+        geoFire = new GeoFire(LatLngUser);
     }
 
 
@@ -73,12 +82,15 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
                 if(count <= 1) {
 
                     currentMarker = mMap.addMarker(option);
+                    geoFire.setLocation(FirebaseAuth.getInstance().getCurrentUser().getUid(), new GeoLocation(location.getLatitude(), location.getLongitude()));
                     mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(MyLocation, 14));
                     currentMarker.showInfoWindow();
                 }
                 else{
                     currentMarker.remove();
                     currentMarker = mMap.addMarker(option);
+                    geoFire.setLocation(FirebaseAuth.getInstance().getCurrentUser().getUid(), new GeoLocation(location.getLatitude(), location.getLongitude()));
+
                 }
             }
         });

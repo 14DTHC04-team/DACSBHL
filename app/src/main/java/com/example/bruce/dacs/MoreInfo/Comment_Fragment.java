@@ -104,9 +104,6 @@ public class Comment_Fragment extends android.support.v4.app.Fragment {
 
                         }
                     });
-
-
-
                 }
 
             }

@@ -3,12 +3,17 @@ package com.example.bruce.dacs.BigMap;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
+import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -19,6 +24,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.View;
@@ -41,10 +47,16 @@ import com.example.bruce.dacs.GPSTracker;
 import com.example.bruce.dacs.MoreInfo.InfoActivity;
 import com.example.bruce.dacs.R;
 import com.example.bruce.dacs.Server;
+import com.firebase.geofire.GeoFire;
+import com.firebase.geofire.GeoLocation;
+import com.firebase.geofire.GeoQuery;
+import com.firebase.geofire.GeoQueryEventListener;
+import com.firebase.geofire.LocationCallback;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
@@ -52,6 +64,13 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
@@ -64,20 +83,22 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Random;
 
 import static com.example.bruce.dacs.R.id.map;
 
 public class BigMap extends FragmentActivity implements OnMapReadyCallback, DirectionFinderListener, MenumapAdapter.RecyclerViewClicklistener {
-
     private GoogleMap mMap;
-
+    private GoogleMap myMap;
     private List<Marker> originMarkers = new ArrayList<>();
     private List<Marker> destinationMarkers = new ArrayList<>();
+    private List<Marker> locationUser=new ArrayList<>();
     private List<Polyline> polylinePaths = new ArrayList<>();
     private ProgressDialog progressDialog;
     String origin;
     String destination;
     LatLng myLocation;
+
 
 
     MenumapAdapter adapter;
@@ -92,7 +113,7 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
 
 
     int r = 0;
-    int count = 0;
+    boolean count = true;
 
     Double latitude;
     Double longtitude;
@@ -100,6 +121,12 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
 
     RecyclerView recyclerView;
 
+    private DatabaseReference LatLngUser;
+
+    GeoFire geoFire;
+    GeoQuery geoQuery;
+
+    boolean area=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -137,6 +164,8 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
 
 
         Search();
+        LatLngUser = FirebaseDatabase.getInstance().getReference("LatLngUser");
+        geoFire = new GeoFire(LatLngUser);
     }
 
     private void Search() {
@@ -187,26 +216,137 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
-
+        myMap=googleMap;
         mMap = googleMap;
 
         destination = "";
 
         final GPSTracker gps = new GPSTracker(this);
 
-        mMap.setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
+        myMap.setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
 
             @Override
             public void onMyLocationChange(Location location) {
 
-                count++;
+
+
                 origin = location.getLatitude() + ", " + location.getLongitude();
                 myLocation = new LatLng(location.getLatitude(), location.getLongitude());
+                //googleMap.addMarker(new MarkerOptions().position(new LatLng(latitude, longtitude)).title("Some where"));
 
-                if (count == 1) {
-                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longtitude), 14));
-
+                if (count==true)
+                {
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(myLocation,14));
+                    count=false;
                 }
+
+                    FirebaseDatabase.getInstance().getReference("LatLngUser").addChildEventListener(new ChildEventListener() {
+                        @Override
+                        public void onChildAdded(final DataSnapshot dataSnapshot, String s) {
+                            for (Marker maker :locationUser)
+                                maker.remove();
+                            geoFire.getLocation(String.valueOf(dataSnapshot.getKey()), new LocationCallback() {
+                                @Override
+                                public void onLocationResult(String key, GeoLocation location) {
+                                    if (location != null)
+                                    {
+                                        if(dataSnapshot.getKey().toString()!=FirebaseAuth.getInstance().getCurrentUser().getUid()) {
+                                            locationUser.add(myMap.addMarker(new MarkerOptions()
+                                                    .title("Firend")
+                                                    .position(new LatLng(location.latitude, location.longitude))
+                                                    .flat(true)
+                                                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.car))));
+                                        }
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+
+                                }
+                            });
+
+
+                        }
+
+                        @Override
+                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+                        }
+
+                        @Override
+                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+                    geoFire.setLocation(FirebaseAuth.getInstance().getCurrentUser().getUid(), new GeoLocation(location.getLatitude(), location.getLongitude()));
+                    geoFire.getLocation("06Sl7Z8ZmdQjG5UZiBqh6V6YCRp2", new LocationCallback() {
+                        @Override
+                        public void onLocationResult(String key, GeoLocation location) {
+                            if (location != null) {
+                                myMap.addCircle(new CircleOptions()
+                                        .center(new LatLng(location.latitude,location.longitude))
+                                        .radius(500) //tinh theo met'
+                                        .strokeColor(Color.RED)
+                                        .fillColor(0x44ff0000));
+                                geoQuery=geoFire.queryAtLocation(new GeoLocation(location.latitude,location.longitude),0.5f);
+                                geoQuery.removeAllListeners();
+                                geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
+                                    @Override
+                                    public void onKeyEntered(String key, final GeoLocation location) {
+
+                                            if (FirebaseAuth.getInstance().getCurrentUser().getUid() == key) {
+                                                if (area == true) {
+                                                    sendNotification("HiwhereAmI",FirebaseAuth.getInstance().getCurrentUser().getDisplayName()+": Bạn Đã Vào Khu Vực Của Team");
+                                                    area=false;
+                                                }
+                                            }
+                                    }
+                                        @Override
+                                        public void onKeyExited(String key) {
+                                            if (FirebaseAuth.getInstance().getCurrentUser().getUid() == key) {
+                                                if (area == false) {
+                                                    sendNotification("HiwhereAmI",FirebaseAuth.getInstance().getCurrentUser().getDisplayName()+": Bạn Đã Đi Khỏi Khu Vực Team");
+                                                    area=true;
+                                                }
+                                            }
+                                        }
+                                    @Override
+                                    public void onKeyMoved(String key, GeoLocation location) {
+                                        Log.d("asd","MOve"+key + " " + location.latitude + "  " + location.longitude);
+                                    }
+                                    @Override
+                                    public void onGeoQueryReady() {
+                                        Log.d("asd","hoanthanh");
+                                    }
+                                    @Override
+                                    public void onGeoQueryError(DatabaseError error) {
+
+                                    }
+                                });
+                            } else {
+                                System.out.println(String.format("There is no location for key %s in GeoFire", key));
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+                            System.err.println("There was an error getting the GeoFire location: " + databaseError);
+                        }
+                    });
+
+
+
             }
         });
 
@@ -228,6 +368,7 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
         mMap.setMyLocationEnabled(true);
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setCompassEnabled(true);
+
 //--------------------------------------------------------------------------------------------------------------------------------
         mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
@@ -350,6 +491,23 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
 //------------------------------------------------------------------------------------------------------------------------------------
 
         Firebase_Tourist_Location(latitude, longtitude, r);
+
+    }
+
+    private void sendNotification(String title, String content) {
+        Notification.Builder builder=new Notification.Builder(this)
+                .setSmallIcon(R.mipmap.ic_launcher_round)
+                .setContentTitle(title)
+                .setContentText(content);
+        NotificationManager manager= (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
+        Intent intent=new Intent(this,BigMap.class);
+        PendingIntent contentIntent=PendingIntent.getActivity(this,0, intent, PendingIntent.FLAG_IMMUTABLE);
+        builder.setContentIntent(contentIntent);
+        Notification notification =builder.build();
+        notification.flags |=Notification.FLAG_AUTO_CANCEL;
+        notification.defaults|=Notification.DEFAULT_SOUND;
+        manager.notify(new Random().nextInt(),notification);
+
 
     }
 
@@ -750,7 +908,8 @@ public class BigMap extends FragmentActivity implements OnMapReadyCallback, Dire
 
             }
     }
-}
+
+  }
 //class PicassoMarker implements Target {
 //    Marker mMarker;
 //

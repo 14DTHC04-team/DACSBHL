@@ -78,9 +78,6 @@ public class Write_Comment_Activity extends AppCompatActivity  {
         adapterImage=new Adapter_Comment_Image(getApplicationContext(),imagesPost);
 
         recyclerView.setAdapter(adapterImage);
-
-
-
         addImage(btnPostImage);
         Post(btnPost,edtComment);
 
@@ -107,8 +104,8 @@ public class Write_Comment_Activity extends AppCompatActivity  {
                     myComment.date = date;
 
                     myComment.userName = firebaseAuth.getCurrentUser().getDisplayName();
-
                     Comment   = mData.child("Comments").push();
+
                     Comment.setValue(myComment);
                     upload();
                     //onBackPressed();
